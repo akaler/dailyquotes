@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		70D2E33024DA2C5500A6A196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E32E24DA2C5500A6A196 /* Main.storyboard */; };
 		70D2E33224DA2C5800A6A196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33124DA2C5800A6A196 /* Assets.xcassets */; };
 		70D2E33524DA2C5800A6A196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */; };
+		70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */; };
+		786D01886BC58738BAE77329 /* Pods_Daily_quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.debug.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.debug.xcconfig"; sourceTree = "<group>"; };
 		70D2E32524DA2C5500A6A196 /* Daily quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		70D2E33124DA2C5800A6A196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D2E33424DA2C5800A6A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D2E33624DA2C5800A6A196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.release.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.release.xcconfig"; sourceTree = "<group>"; };
+		9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786D01886BC58738BAE77329 /* Pods_Daily_quotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BD76176081B5E395C5A0E1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */,
+				9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DAA626DF5CA5EE5B0AFEDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		70D2E31C24DA2C5500A6A196 = {
 			isa = PBXGroup;
 			children = (
 				70D2E32724DA2C5500A6A196 /* Daily quotes */,
 				70D2E32624DA2C5500A6A196 /* Products */,
+				5BD76176081B5E395C5A0E1B /* Pods */,
+				5DAA626DF5CA5EE5B0AFEDFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		70D2E32724DA2C5500A6A196 /* Daily quotes */ = {
 			isa = PBXGroup;
 			children = (
+				70D2E33C24DA2D1F00A6A196 /* Controllers */,
 				70D2E32824DA2C5500A6A196 /* AppDelegate.swift */,
 				70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */,
 				70D2E32C24DA2C5500A6A196 /* ViewController.swift */,
@@ -67,6 +94,14 @@
 			path = "Daily quotes";
 			sourceTree = "<group>";
 		};
+		70D2E33C24DA2D1F00A6A196 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily quotes" */;
 			buildPhases = (
+				08FEA3986F43DC6BD9ECD255 /* [CP] Check Pods Manifest.lock */,
 				70D2E32124DA2C5500A6A196 /* Sources */,
 				70D2E32224DA2C5500A6A196 /* Frameworks */,
 				70D2E32324DA2C5500A6A196 /* Resources */,
+				705806E33A3634DEF21A442A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +170,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08FEA3986F43DC6BD9ECD255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daily quotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		705806E33A3634DEF21A442A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70D2E32124DA2C5500A6A196 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +220,7 @@
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
 				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
 				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
+				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		70D2E33A24DA2C5800A6A196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		70D2E33B24DA2C5800A6A196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
