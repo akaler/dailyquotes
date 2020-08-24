@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706D08AA24F333250010C460 /* selectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D08A924F333250010C460 /* selectionViewController.swift */; };
 		70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32824DA2C5500A6A196 /* AppDelegate.swift */; };
 		70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */; };
 		70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32C24DA2C5500A6A196 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.debug.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.debug.xcconfig"; sourceTree = "<group>"; };
+		706D08A924F333250010C460 /* selectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectionViewController.swift; sourceTree = "<group>"; };
 		70D2E32524DA2C5500A6A196 /* Daily quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				70D2E32824DA2C5500A6A196 /* AppDelegate.swift */,
 				70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */,
 				70D2E32C24DA2C5500A6A196 /* ViewController.swift */,
+				706D08A924F333250010C460 /* selectionViewController.swift */,
 				70D2E32E24DA2C5500A6A196 /* Main.storyboard */,
 				70D2E33124DA2C5800A6A196 /* Assets.xcassets */,
 				70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			files = (
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
 				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
+				706D08AA24F333250010C460 /* selectionViewController.swift in Sources */,
 				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
 				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
 			);
