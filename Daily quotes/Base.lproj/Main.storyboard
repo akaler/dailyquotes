@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYC-T2-ZoA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d4b-TZ-Kdr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="11.594202898550726" y="118.52678571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--Select View Controller-->
         <scene sceneID="AuI-x2-EPB">
             <objects>
-                <viewController id="dTz-8L-PZx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="select" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dTz-8L-PZx" customClass="selectViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wis-7o-KTc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,8 +164,13 @@
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <state key="normal" title="Button" image="Socrates"/>
+                                                        <state key="disabled" image="Kant"/>
+                                                        <state key="selected" image="Aristotle"/>
+                                                        <state key="highlighted" image="plato"/>
                                                         <connections>
+                                                            <action selector="socratesButton:" destination="dTz-8L-PZx" eventType="touchUpInside" id="8Wa-3Q-hEp"/>
                                                             <action selector="socratesButton:" destination="Jus-MW-0uq" eventType="touchUpInside" id="ev8-Zl-jo1"/>
+                                                            <action selector="socratesButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="2qq-oY-WPE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phf-bn-QlG">
@@ -299,15 +304,54 @@
                         <viewLayoutGuide key="safeArea" id="w3F-oH-Odn"/>
                     </view>
                     <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="socratesButton" destination="5wv-4S-cey" id="opz-5m-bze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSL-cl-rJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Jus-MW-0uq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="939" y="62"/>
         </scene>
+        <!--Test View Controller-->
+        <scene sceneID="i9R-Cy-bqX">
+            <objects>
+                <viewController id="d4b-TZ-Kdr" customClass="testViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PfS-oa-qeS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQq-dB-uJq">
+                                <rect key="frame" x="171" y="253" width="73" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="square.and.arrow.up" catalog="system"/>
+                                <state key="selected" image="square.and.arrow.up.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="testButton:" destination="Gqa-pg-OAL" eventType="touchUpInside" id="gI9-95-3CK"/>
+                                    <action selector="testButtonPressed:" destination="d4b-TZ-Kdr" eventType="touchUpInside" id="dKt-Rj-yYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1Ze-WL-U7s"/>
+                    </view>
+                    <connections>
+                        <outlet property="testButton" destination="VQq-dB-uJq" id="AUq-5z-lxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTt-D0-1wZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Gqa-pg-OAL" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2252.1739130434785" y="-894.64285714285711"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Aristotle" width="1200" height="1200"/>
+        <image name="Kant" width="1009" height="1317"/>
         <image name="Socrates" width="468" height="566"/>
         <image name="Trump-Golf" width="189" height="267"/>
+        <image name="plato" width="1200" height="1660"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
     </resources>
 </document>

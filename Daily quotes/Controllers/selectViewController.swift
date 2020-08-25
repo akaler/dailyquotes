@@ -1,24 +1,28 @@
 //
-//  selectionViewController.swift
+//  selectViewController.swift
 //  Daily quotes
 //
-//  Created by Abhijot Kaler on 23/08/20.
+//  Created by Abhijot Kaler on 24/08/20.
 //  Copyright © 2020 KalerCorp. All rights reserved.
 //
 
 import UIKit
 
-class selectionViewController: UIViewController {
-
+class selectViewController: UIViewController {
+    @IBOutlet weak var socratesButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func socratesButton(_ sender: Any) {
-    //    playButton.setImage(UIImage(named: "play.png"), for: .normal)
-
+    @IBAction func socratesButtonPressed( sender: UIButton!) {
+        if sender.isSelected{
+            sender.isSelected = false
+        }
+        else {
+            sender.isSelected = true
+        }
     }
     
 
