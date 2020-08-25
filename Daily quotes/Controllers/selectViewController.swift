@@ -9,14 +9,37 @@
 import UIKit
 
 class selectViewController: UIViewController {
-    @IBOutlet weak var socratesButton: UIButton!
-    
+    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        //let defaults = UserDefaults.standard
+        var dict = ["socrates": false, "aristotle" : false, "plato": false, "kant" : false]
+        defaults.set(25, forKey: "Age")
+        defaults.set( dict, forKey: "dict")
     }
-    @IBAction func socratesButtonPressed( sender: UIButton!) {
+
+    @IBAction func socButtonPressed(_ sender: UIButton) {
+        print("socpressed")
+        if sender.isSelected{
+                sender.isSelected = false
+           // print("if sender.isselectd (true) ")
+            
+            }
+            else {
+            //print("sender.isSelcted (false)")
+                sender.isSelected = true
+           // let age = self.defaults(forKey: "Age")
+            print("age: \(age)")
+            //sender.fadeOut()
+            //sender.fadeOut()
+            //sender.fadeIn()
+            //sender.fadeOut()
+            
+            }
+    }
+
+    @IBAction func aristotleButtonPressed(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
         }
@@ -25,7 +48,25 @@ class selectViewController: UIViewController {
         }
     }
     
+    @IBAction func platoButtonPressed(_ sender: UIButton) {
+        if sender.isSelected{
+            sender.isSelected = false
+        }
+        else {
+            sender.isSelected = true
+        }
+    }
 
+    @IBAction func kantButtonPressed(_ sender: UIButton) {
+        if sender.isSelected{
+            sender.isSelected = false
+        }
+        else {
+            sender.isSelected = true
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 

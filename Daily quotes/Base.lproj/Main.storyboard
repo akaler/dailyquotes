@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d4b-TZ-Kdr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYC-T2-ZoA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -80,14 +80,22 @@
                                                         </constraints>
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                                                        <state key="normal" title="Button" image="Socrates"/>
+                                                        <state key="normal" title="Button" image="Aristotle"/>
+                                                        <state key="selected" image="Aristotle checked"/>
+                                                        <connections>
+                                                            <action selector="aristotleButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="yRm-F2-3YO"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-4Y-XEf">
                                                         <rect key="frame" x="0.0" y="170" width="196" height="150"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="yts-Rc-GJu"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="Trump-Golf"/>
+                                                        <state key="normal" title="Button" image="Kant"/>
+                                                        <state key="selected" image="Kant_selected"/>
+                                                        <connections>
+                                                            <action selector="kantButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Rml-gl-ewy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-TZ-s8t">
                                                         <rect key="frame" x="0.0" y="340" width="196" height="150"/>
@@ -164,13 +172,9 @@
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <state key="normal" title="Button" image="Socrates"/>
-                                                        <state key="disabled" image="Kant"/>
-                                                        <state key="selected" image="Aristotle"/>
-                                                        <state key="highlighted" image="plato"/>
+                                                        <state key="selected" image="Socrates_checked"/>
                                                         <connections>
-                                                            <action selector="socratesButton:" destination="dTz-8L-PZx" eventType="touchUpInside" id="8Wa-3Q-hEp"/>
-                                                            <action selector="socratesButton:" destination="Jus-MW-0uq" eventType="touchUpInside" id="ev8-Zl-jo1"/>
-                                                            <action selector="socratesButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="2qq-oY-WPE"/>
+                                                            <action selector="socButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="1po-Ad-Rer"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phf-bn-QlG">
@@ -178,7 +182,11 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="RIZ-Xf-V3g"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="Trump-Golf"/>
+                                                        <state key="normal" title="Button" image="plato"/>
+                                                        <state key="selected" image="plato_selected"/>
+                                                        <connections>
+                                                            <action selector="platoButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="wAi-rp-Qbv"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5M-Fo-rVD">
                                                         <rect key="frame" x="0.0" y="340" width="196" height="150"/>
@@ -304,12 +312,8 @@
                         <viewLayoutGuide key="safeArea" id="w3F-oH-Odn"/>
                     </view>
                     <size key="freeformSize" width="414" height="2000"/>
-                    <connections>
-                        <outlet property="socratesButton" destination="5wv-4S-cey" id="opz-5m-bze"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSL-cl-rJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Jus-MW-0uq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="939" y="62"/>
         </scene>
@@ -347,10 +351,13 @@
     </scenes>
     <resources>
         <image name="Aristotle" width="1200" height="1200"/>
+        <image name="Aristotle checked" width="1200" height="1200"/>
         <image name="Kant" width="1009" height="1317"/>
+        <image name="Kant_selected" width="1000" height="1000"/>
         <image name="Socrates" width="468" height="566"/>
-        <image name="Trump-Golf" width="189" height="267"/>
+        <image name="Socrates_checked" width="468" height="566"/>
         <image name="plato" width="1200" height="1660"/>
+        <image name="plato_selected" width="1200" height="1200"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
     </resources>
