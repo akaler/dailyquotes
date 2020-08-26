@@ -18,6 +18,8 @@ class testViewController: UIViewController {
     }
     
     @IBAction func testButtonPressed(_ sender: UIButton) {
+        print("printing dicitonary from another uiview controller")
+        print(UserDefaults.standard.dictionary(forKey: "dict")!)
         if sender.isSelected{
             sender.isSelected = false
         }

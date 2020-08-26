@@ -14,23 +14,39 @@ class selectViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //let defaults = UserDefaults.standard
-        var dict = ["socrates": false, "aristotle" : false, "plato": false, "kant" : false]
+        let dict : [String : Bool] = ["socrates": false, "aristotle" : false, "plato": false, "kant" : false]
         defaults.set(25, forKey: "Age")
         defaults.set( dict, forKey: "dict")
     }
 
+    @IBAction func testButtonPressed(_ sender: Any) {
+        print(UserDefaults.standard.dictionary(forKey:"dict")!)
+    }
     @IBAction func socButtonPressed(_ sender: UIButton) {
-        print("socpressed")
+        //let defaults = UserDefaults.standard
+        //print("socpressed")
         if sender.isSelected{
                 sender.isSelected = false
-           // print("if sender.isselectd (true) ")
+            //updating dictionary
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["socrates"] = false
+            UserDefaults.standard.set(rr, forKey: "dict")
             
             }
             else {
-            //print("sender.isSelcted (false)")
                 sender.isSelected = true
+            //updating dictionary
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["socrates"] = true
+            UserDefaults.standard.set(rr, forKey: "dict")
+            
+           // print(UserDefaults.standard.dictionary(forKey:"dict")!)
+            
+            //defaults.dictionary(forKey: "dict").updateValue(true, forKey: "socrates")
+            //print("the dict: \(defaults.dictionary(forKey: "dict"))")
+            
            // let age = self.defaults(forKey: "Age")
-            print("age: \(age)")
+           // print("age: \(age)")
             //sender.fadeOut()
             //sender.fadeOut()
             //sender.fadeIn()
@@ -42,27 +58,47 @@ class selectViewController: UIViewController {
     @IBAction func aristotleButtonPressed(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
+            //removing aristotle from dictionary
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["aristotle"] = false
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
         else {
             sender.isSelected = true
+            //adding aristotle to dictionary
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["aristotle"] = true
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
     }
     
     @IBAction func platoButtonPressed(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["plato"] = false
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
         else {
             sender.isSelected = true
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["plato"] = true
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
     }
 
     @IBAction func kantButtonPressed(_ sender: UIButton) {
         if sender.isSelected{
             sender.isSelected = false
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["kant"] = false
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
         else {
             sender.isSelected = true
+            var rr  = UserDefaults.standard.dictionary(forKey: "dict")
+            rr?["kant"] = true
+            UserDefaults.standard.set(rr, forKey: "dict")
         }
     }
     

@@ -10,6 +10,14 @@
 		703C3CD124F459D00026038E /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD024F459D00026038E /* selectViewController.swift */; };
 		703C3CD324F45AE60026038E /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD224F45AE60026038E /* testViewController.swift */; };
 		703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD624F5711E0026038E /* ButtonAnimation.swift */; };
+		703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD824F5AB350026038E /* quoteViewController.swift */; };
+		703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CDA24F5AF270026038E /* Model.xcdatamodeld */; };
+		703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */; };
+		703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */; };
+		703C3D1524F5CF720026038E /* kantQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1424F5CF720026038E /* kantQuotes.swift */; };
+		703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1624F5D1390026038E /* platoQuotes.swift */; };
+		703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1824F5D4E10026038E /* aristotleQuotes.swift */; };
+		703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1A24F5D58A0026038E /* socratesQuotes.swift */; };
 		70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32824DA2C5500A6A196 /* AppDelegate.swift */; };
 		70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */; };
 		70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32C24DA2C5500A6A196 /* ViewController.swift */; };
@@ -25,6 +33,15 @@
 		703C3CD024F459D00026038E /* selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
 		703C3CD224F45AE60026038E /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		703C3CD624F5711E0026038E /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		703C3CD824F5AB350026038E /* quoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteViewController.swift; sourceTree = "<group>"; };
+		703C3CDB24F5AF270026038E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Philosophers+CoreDataClass.swift"; sourceTree = "<group>"; };
+		703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Philosophers+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		703C3D1124F5CECA0026038E /* Daily quotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Daily quotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		703C3D1424F5CF720026038E /* kantQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kantQuotes.swift; sourceTree = "<group>"; };
+		703C3D1624F5D1390026038E /* platoQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platoQuotes.swift; sourceTree = "<group>"; };
+		703C3D1824F5D4E10026038E /* aristotleQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aristotleQuotes.swift; sourceTree = "<group>"; };
+		703C3D1A24F5D58A0026038E /* socratesQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socratesQuotes.swift; sourceTree = "<group>"; };
 		70D2E32524DA2C5500A6A196 /* Daily quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +84,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		703C3D0024F5BCCF0026038E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */,
+				703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */,
+				703C3D1424F5CF720026038E /* kantQuotes.swift */,
+				703C3D1624F5D1390026038E /* platoQuotes.swift */,
+				703C3D1824F5D4E10026038E /* aristotleQuotes.swift */,
+				703C3D1A24F5D58A0026038E /* socratesQuotes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		70D2E31C24DA2C5500A6A196 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +118,7 @@
 		70D2E32724DA2C5500A6A196 /* Daily quotes */ = {
 			isa = PBXGroup;
 			children = (
+				703C3D0024F5BCCF0026038E /* Model */,
 				70D2E33C24DA2D1F00A6A196 /* Controllers */,
 				70D2E32824DA2C5500A6A196 /* AppDelegate.swift */,
 				70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */,
@@ -97,6 +128,8 @@
 				70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */,
 				70D2E33624DA2C5800A6A196 /* Info.plist */,
 				703C3CD624F5711E0026038E /* ButtonAnimation.swift */,
+				703C3CDA24F5AF270026038E /* Model.xcdatamodeld */,
+				703C3D1124F5CECA0026038E /* Daily quotes-Bridging-Header.h */,
 			);
 			path = "Daily quotes";
 			sourceTree = "<group>";
@@ -107,6 +140,7 @@
 				70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */,
 				703C3CD024F459D00026038E /* selectViewController.swift */,
 				703C3CD224F45AE60026038E /* testViewController.swift */,
+				703C3CD824F5AB350026038E /* quoteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +179,7 @@
 				TargetAttributes = {
 					70D2E32424DA2C5500A6A196 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -227,9 +262,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */,
+				703C3D1524F5CF720026038E /* kantQuotes.swift in Sources */,
+				703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */,
+				703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */,
 				703C3CD324F45AE60026038E /* testViewController.swift in Sources */,
+				703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */,
+				703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */,
+				703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */,
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
 				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
+				703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */,
+				703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */,
 				703C3CD124F459D00026038E /* selectViewController.swift in Sources */,
 				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
 				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
@@ -377,6 +420,7 @@
 			baseConfigurationReference = 4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
 				INFOPLIST_FILE = "Daily quotes/Info.plist";
@@ -386,6 +430,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +442,7 @@
 			baseConfigurationReference = 9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
 				INFOPLIST_FILE = "Daily quotes/Info.plist";
@@ -405,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -432,6 +480,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		703C3CDA24F5AF270026038E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				703C3CDB24F5AF270026038E /* Model.xcdatamodel */,
+			);
+			currentVersion = 703C3CDB24F5AF270026038E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 70D2E31D24DA2C5500A6A196 /* Project object */;
 }
