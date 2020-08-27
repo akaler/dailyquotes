@@ -19,6 +19,9 @@ class selectViewController: UIViewController {
         defaults.set( dict, forKey: "dict")
     }
 
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "saved")
+    }
     @IBAction func testButtonPressed(_ sender: Any) {
         print(UserDefaults.standard.dictionary(forKey:"dict")!)
     }

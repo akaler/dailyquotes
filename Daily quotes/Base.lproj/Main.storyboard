@@ -10,8 +10,8 @@
         <!--View Controller-->
         <scene sceneID="dJH-Ee-qgh">
             <objects>
-                <viewController id="sYC-T2-ZoA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mgc-Cx-161">
+                <viewController storyboardIdentifier="getstarted" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sYC-T2-ZoA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="getstarted" id="Mgc-Cx-161">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -80,7 +80,7 @@
                                                         </constraints>
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                                                        <state key="normal" title="Button" image="Aristotle"/>
+                                                        <state key="normal" title="Button" image="aristotle"/>
                                                         <state key="selected" image="Aristotle checked"/>
                                                         <connections>
                                                             <action selector="aristotleButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="yRm-F2-3YO"/>
@@ -91,7 +91,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="yts-Rc-GJu"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="Kant"/>
+                                                        <state key="normal" title="Button" image="kant"/>
                                                         <state key="selected" image="Kant_selected"/>
                                                         <connections>
                                                             <action selector="kantButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Rml-gl-ewy"/>
@@ -171,7 +171,7 @@
                                                         </constraints>
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                                                        <state key="normal" title="Button" image="Socrates"/>
+                                                        <state key="normal" title="Button" image="socrates"/>
                                                         <state key="selected" image="Socrates_checked"/>
                                                         <connections>
                                                             <action selector="socButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="1po-Ad-Rer"/>
@@ -303,6 +303,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="nextButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="ifZ-Gk-pyv"/>
                                     <segue destination="fjp-51-GPL" kind="presentation" modalPresentationStyle="fullScreen" id="Hjx-Lm-iYz"/>
                                 </connections>
                             </button>
@@ -331,37 +332,50 @@
         <!--Quote View Controller-->
         <scene sceneID="i7E-3Z-chQ">
             <objects>
-                <viewController id="fjp-51-GPL" customClass="quoteViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quotes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fjp-51-GPL" customClass="quoteViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nVk-Am-74S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-l1-DDJ">
-                                <rect key="frame" x="20" y="259" width="374" height="208"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-l1-DDJ">
+                                <rect key="frame" x="20" y="88" width="374" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyy-FB-CKA">
-                                <rect key="frame" x="168" y="589" width="78" height="30"/>
+                                <rect key="frame" x="168" y="820" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Quote"/>
                                 <connections>
                                     <action selector="nextQuoteButton:" destination="fjp-51-GPL" eventType="touchUpInside" id="UUL-6A-kPY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alZ-NF-r8j">
+                                <rect key="frame" x="144" y="766" width="126" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PF0-ig-toM">
+                                <rect key="frame" x="129" y="630" width="157" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hc1-E0-qaP"/>
                     </view>
                     <connections>
+                        <outlet property="philosopherImageView" destination="PF0-ig-toM" id="chX-JQ-dEg"/>
+                        <outlet property="philospherNameLabel" destination="alZ-NF-r8j" id="fIX-Fa-1XF"/>
                         <outlet property="quoteLabel" destination="1Ar-l1-DDJ" id="nbn-4D-df2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEq-bK-9x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="-307.36607142857139"/>
+            <point key="canvasLocation" x="1969.5652173913045" y="30.803571428571427"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="i9R-Cy-bqX">
@@ -397,14 +411,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Aristotle" width="1200" height="1200"/>
         <image name="Aristotle checked" width="1200" height="1200"/>
-        <image name="Kant" width="1009" height="1317"/>
         <image name="Kant_selected" width="1000" height="1000"/>
-        <image name="Socrates" width="468" height="566"/>
         <image name="Socrates_checked" width="468" height="566"/>
+        <image name="aristotle" width="1200" height="1200"/>
+        <image name="kant" width="1009" height="1317"/>
         <image name="plato" width="1200" height="1660"/>
         <image name="plato_selected" width="1200" height="1200"/>
+        <image name="socrates" width="468" height="566"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
     </resources>

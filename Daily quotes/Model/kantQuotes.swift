@@ -12,7 +12,6 @@ struct kant {
     "How then is perfection to be sought? Wherein lies our hope? In education, and in nothing else",
     "All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason",
     "There is something splendid about innocence; but what is bad about it, in turn, is that it cannot protect itself very well and is easily seduced.",
-    
     "One who makes himself a worm cannot complain afterwards if people step on him.",
     "The busier we are, the more acutely we feel that we live, the more conscious we are of life.",
     "Genius is the ability to independently arrive at and understand concepts that would normally have to be taught by another person.",

@@ -12,10 +12,24 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /*
+        if (UserDefaults.standard.bool(forKey: "notFirstInApp") == false){
+            UserDefaults.standard.set(true, forKey: "notFirstInApp")
+            self.window?.rootViewController = UIViewController(nibName: "getstarted", bundle: nil)//your tutorial view controller
+        }else{
+            self.window?.rootViewController = UIViewController(nibName: "quotes", bundle: nil)//your main viewcontroller
+        }
+*/
+
+
+//        if (UserDefaults.standard.bool( forKey: "saved")) == true {
+           
+               
+        
         return true
     }
 
