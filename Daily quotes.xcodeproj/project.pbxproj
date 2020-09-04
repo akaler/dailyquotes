@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		703C3CD124F459D00026038E /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD024F459D00026038E /* selectViewController.swift */; };
-		703C3CD324F45AE60026038E /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD224F45AE60026038E /* testViewController.swift */; };
 		703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD624F5711E0026038E /* ButtonAnimation.swift */; };
 		703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD824F5AB350026038E /* quoteViewController.swift */; };
 		703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CDA24F5AF270026038E /* Model.xcdatamodeld */; };
@@ -25,13 +24,16 @@
 		70D2E33224DA2C5800A6A196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33124DA2C5800A6A196 /* Assets.xcassets */; };
 		70D2E33524DA2C5800A6A196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */; };
 		70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */; };
+		70DD6C352500632D000923FA /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C342500632D000923FA /* settingsViewController.swift */; };
+		70DD6C3825016F28000923FA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C3725016F28000923FA /* RoundButton.swift */; };
+		70DD6C3A2501BAED000923FA /* SunTzu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C392501BAED000923FA /* SunTzu.swift */; };
+		70DD6C3C2501D8E7000923FA /* Heraclitus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C3B2501D8E7000923FA /* Heraclitus.swift */; };
 		786D01886BC58738BAE77329 /* Pods_Daily_quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.debug.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.debug.xcconfig"; sourceTree = "<group>"; };
 		703C3CD024F459D00026038E /* selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
-		703C3CD224F45AE60026038E /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		703C3CD624F5711E0026038E /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		703C3CD824F5AB350026038E /* quoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteViewController.swift; sourceTree = "<group>"; };
 		703C3CDB24F5AF270026038E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		70D2E33424DA2C5800A6A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D2E33624DA2C5800A6A196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		70DD6C342500632D000923FA /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		70DD6C3725016F28000923FA /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		70DD6C392501BAED000923FA /* SunTzu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTzu.swift; sourceTree = "<group>"; };
+		70DD6C3B2501D8E7000923FA /* Heraclitus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heraclitus.swift; sourceTree = "<group>"; };
 		9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.release.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.release.xcconfig"; sourceTree = "<group>"; };
 		9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,6 +99,8 @@
 				703C3D1624F5D1390026038E /* platoQuotes.swift */,
 				703C3D1824F5D4E10026038E /* aristotleQuotes.swift */,
 				703C3D1A24F5D58A0026038E /* socratesQuotes.swift */,
+				70DD6C392501BAED000923FA /* SunTzu.swift */,
+				70DD6C3B2501D8E7000923FA /* Heraclitus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 		70D2E32724DA2C5500A6A196 /* Daily quotes */ = {
 			isa = PBXGroup;
 			children = (
+				70DD6C3625016EF4000923FA /* Custom Classes */,
 				703C3D0024F5BCCF0026038E /* Model */,
 				70D2E33C24DA2D1F00A6A196 /* Controllers */,
 				70D2E32824DA2C5500A6A196 /* AppDelegate.swift */,
@@ -139,10 +148,18 @@
 			children = (
 				70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */,
 				703C3CD024F459D00026038E /* selectViewController.swift */,
-				703C3CD224F45AE60026038E /* testViewController.swift */,
 				703C3CD824F5AB350026038E /* quoteViewController.swift */,
+				70DD6C342500632D000923FA /* settingsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		70DD6C3625016EF4000923FA /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				70DD6C3725016F28000923FA /* RoundButton.swift */,
+			);
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,17 +280,20 @@
 			files = (
 				703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */,
 				703C3D1524F5CF720026038E /* kantQuotes.swift in Sources */,
+				70DD6C3A2501BAED000923FA /* SunTzu.swift in Sources */,
 				703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */,
 				703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */,
-				703C3CD324F45AE60026038E /* testViewController.swift in Sources */,
+				70DD6C3C2501D8E7000923FA /* Heraclitus.swift in Sources */,
 				703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */,
 				703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */,
+				70DD6C352500632D000923FA /* settingsViewController.swift in Sources */,
 				703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */,
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
 				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
 				703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */,
 				703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */,
 				703C3CD124F459D00026038E /* selectViewController.swift in Sources */,
+				70DD6C3825016F28000923FA /* RoundButton.swift in Sources */,
 				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
 				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
 			);

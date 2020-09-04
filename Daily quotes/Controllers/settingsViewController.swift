@@ -1,33 +1,26 @@
 //
-//  testViewController.swift
+//  settingsViewController.swift
 //  Daily quotes
 //
-//  Created by Abhijot Kaler on 24/08/20.
+//  Created by Abhijot Kaler on 02/09/20.
 //  Copyright © 2020 KalerCorp. All rights reserved.
 //
 
 import UIKit
 
-class testViewController: UIViewController {
+class settingsViewController: UIViewController {
 
-    @IBOutlet weak var testButton: UIButton!
+    
+    @IBOutlet weak var changePhilButton: UIButton!
+    @IBOutlet weak var changeTheme: UIButton!
+    @IBOutlet weak var donateButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+   
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func testButtonPressed(_ sender: UIButton) {
-        print("printing dicitonary from another uiview controller")
-        print(UserDefaults.standard.dictionary(forKey: "dict")!)
-        if sender.isSelected{
-            sender.isSelected = false
-        }
-        else{
-            sender.isSelected = true
-        }
-    }
-    
+
     /*
     // MARK: - Navigation
 
