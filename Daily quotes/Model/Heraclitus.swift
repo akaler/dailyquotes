@@ -42,3 +42,5 @@ struct Heraclitus
     "The kosmos works by harmony of tensions, like lyre and bow. Good and evil are one. On the one hand God sees all as well, fair, and good; on the other hand a human being sees injustice here, justice there. Justice in our minds is strife. We cannot help but see war makes us as we are.",
     ]
 }
+
+

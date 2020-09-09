@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-I9-UEs">
-                                <rect key="frame" x="125" y="549" width="166" height="30"/>
+                                <rect key="frame" x="125" y="548.5" width="166" height="30"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="dTz-8L-PZx" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="wvX-jk-iHE"/>
@@ -25,11 +25,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thousands of quotes from your favorite thinkers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-e1-sN5">
                                 <rect key="frame" x="24" y="183" width="367" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="An2-y3-Pu2" firstAttribute="bottom" secondItem="1VU-I9-UEs" secondAttribute="bottom" constant="283.5" id="2Xy-xi-hhl"/>
                             <constraint firstItem="1VU-I9-UEs" firstAttribute="leading" secondItem="An2-y3-Pu2" secondAttribute="leading" constant="125" id="EcB-Jj-QzT"/>
@@ -277,7 +277,7 @@
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="evA-Rq-td9" firstAttribute="centerY" secondItem="ZN5-Zc-QBb" secondAttribute="centerY" id="5L6-hF-l9V"/>
                                             <constraint firstItem="YGg-3w-tLm" firstAttribute="top" secondItem="ZN5-Zc-QBb" secondAttribute="top" constant="8" id="6GT-nj-YlP"/>
@@ -461,7 +461,7 @@
                                 <rect key="frame" x="20" y="88" width="374" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyy-FB-CKA">
@@ -476,7 +476,7 @@
                                 <rect key="frame" x="144" y="766" width="126" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PF0-ig-toM">
@@ -492,7 +492,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hc1-E0-qaP"/>
                     </view>
                     <navigationItem key="navigationItem" id="RUU-91-tdt"/>
@@ -509,7 +509,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Hjx-Lm-iYz"/>
-        <segue reference="F85-eA-DaP"/>
+        <segue reference="wvX-jk-iHE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Aristotle checked" width="1200" height="1200"/>
@@ -519,8 +519,8 @@
         <image name="heraclitus" width="1666" height="1666"/>
         <image name="heraclitus_checked" width="1666" height="1666"/>
         <image name="kant" width="1009" height="1317"/>
-        <image name="plato" width="1200" height="1660"/>
-        <image name="plato_selected" width="1200" height="1200"/>
+        <image name="plato" width="1049" height="1049"/>
+        <image name="plato_selected" width="1049" height="1049"/>
         <image name="socrates" width="468" height="566"/>
         <image name="staroflife.fill" catalog="system" width="124" height="128"/>
         <image name="sun_tzu_checked" width="2418" height="2417"/>
