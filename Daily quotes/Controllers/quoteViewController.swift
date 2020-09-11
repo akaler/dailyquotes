@@ -143,6 +143,10 @@ class quoteViewController: UIViewController {
             }
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     @IBAction func nextQuoteButton(_ sender: Any) {
         //just changed the style of this button

@@ -99,6 +99,10 @@ class selectViewController: UIViewController {
         }
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBAction func nextButtonPressed(_ sender: Any) {
         UserDefaults.standard.set(true, forKey: "saved")
     }
