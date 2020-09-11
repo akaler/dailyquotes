@@ -145,6 +145,7 @@ class quoteViewController: UIViewController {
     }
 
     @IBAction func nextQuoteButton(_ sender: Any) {
+        //just changed the style of this button
         let count_of_selected_philosphers = user_selected_phil_arr.count
         
         let randomly_choosen_philsopher : String = user_selected_phil_arr[Int.random(in: 0 ..< count_of_selected_philosphers)]
