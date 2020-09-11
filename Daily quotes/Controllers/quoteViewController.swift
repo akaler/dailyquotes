@@ -9,15 +9,18 @@
 import UIKit
 import CoreData
 
+var last_index = 0
+
 func getrandomindex(upper_limit : Int) -> Int
    {
     print(upper_limit)
+    if (upper_limit == 0)
+    {
+        return 0
+    }
         let random_int = Int.random(in: 0 ..< upper_limit)
-    
-    
     //print("getrandomindexGenerated: \(random_int)")
        return random_int
-        
    }
 
 func get_quote_array_size (phil_name_argument: String) -> Int
@@ -32,11 +35,35 @@ func get_quote_array_size (phil_name_argument: String) -> Int
         case"socrates":
             return socrates().quotes.count
         case "kant":
-            return kant().quotes.count
+            return Kant().quotes.count
         case "suntzu":
             return SunTzu().quotes.count
         case "heraclitus":
             return Heraclitus().quotes.count
+        case "descartes":
+            return Descartes().quotes.count
+        case "emerson":
+            return Emerson().quotes.count
+        case "epictetus":
+            return Epictetus().quotes.count
+        case "frankl":
+                return Frankl().quotes.count
+        case "goethe":
+            return Goethe().quotes.count
+        case "kierkegaard":
+            return Kierkegaard().quotes.count
+        case "locke":
+            return Locke().quotes.count
+        case "aurelius":
+            return Aurelius().quotes.count
+        case "nietzsche":
+            return Nietzsche().quotes.count
+        case "rand":
+            return Rand().quotes.count
+        case "seneca":
+            return Seneca().quotes.count
+        case "thoreau":
+            return Thoreau().quotes.count
         default:
             return 0
     }
@@ -45,7 +72,18 @@ func get_quote_array_size (phil_name_argument: String) -> Int
 func get_random_quote(phil_name: String) -> String
 {
     let phil_quote_array_size = get_quote_array_size(phil_name_argument: phil_name)
-    let random_index = getrandomindex(upper_limit :phil_quote_array_size)
+    var random_index = getrandomindex(upper_limit :phil_quote_array_size)
+    
+    if last_index == random_index {
+        print("last_index and random_index were same")
+        random_index = getrandomindex(upper_limit: phil_quote_array_size)
+    }
+    else
+    {
+        last_index = random_index
+    }
+    print("random_index: \(random_index)")
+    print("last)index: \(last_index)")
     switch phil_name
     {
     case "aristotle":
@@ -55,11 +93,35 @@ func get_random_quote(phil_name: String) -> String
     case"socrates":
         return socrates().quotes[random_index]
     case "kant":
-        return kant().quotes[random_index]
+        return Kant().quotes[random_index]
     case "suntzu":
         return SunTzu().quotes[random_index]
     case "heraclitus":
         return Heraclitus().quotes[random_index]
+    case "descartes":
+        return Descartes().quotes[random_index]
+    case "emerson":
+        return Emerson().quotes[random_index]
+    case "epictetus":
+        return Epictetus().quotes[random_index]
+    case "frankl":
+            return Frankl().quotes[random_index]
+    case "goethe":
+        return Goethe().quotes[random_index]
+    case "kierkegaard":
+        return Kierkegaard().quotes[random_index]
+    case "locke":
+        return Locke().quotes[random_index]
+    case "aurelius":
+        return Aurelius().quotes[random_index]
+    case "nietzsche":
+        return Nietzsche().quotes[random_index]
+    case "rand":
+        return Rand().quotes[random_index]
+    case "seneca":
+        return Seneca().quotes[random_index]
+    case "thoreau":
+        return Thoreau().quotes[random_index]
     default:
         return "Something went wrong"
     }
@@ -84,11 +146,16 @@ class quoteViewController: UIViewController {
 
     @IBAction func nextQuoteButton(_ sender: Any) {
         let count_of_selected_philosphers = user_selected_phil_arr.count
+        
         let randomly_choosen_philsopher : String = user_selected_phil_arr[Int.random(in: 0 ..< count_of_selected_philosphers)]
+        
         print(user_selected_phil_arr)
         print(randomly_choosen_philsopher)
+        
         quoteLabel.text = get_random_quote(phil_name: randomly_choosen_philsopher)
+        
         philospherNameLabel.text = randomly_choosen_philsopher.capitalizingFirstLetter()
+        
         philosopherImageView.image = UIImage(named: randomly_choosen_philsopher)
         
     }

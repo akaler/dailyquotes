@@ -88,10 +88,10 @@
                                                         </constraints>
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                                                        <state key="normal" title="Button" image="aristotle"/>
-                                                        <state key="selected" image="Aristotle checked"/>
+                                                        <state key="normal" title="Button" image="heraclitus_named"/>
+                                                        <state key="selected" image="heraclitus_selected"/>
                                                         <connections>
-                                                            <action selector="aristotleButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="yRm-F2-3YO"/>
+                                                            <action selector="heraclitusButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="NeR-5k-M9G"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-4Y-XEf">
@@ -99,43 +99,67 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="yts-Rc-GJu"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="kant"/>
-                                                        <state key="selected" image="Kant_selected"/>
+                                                        <state key="normal" title="Button" image="plato_named"/>
+                                                        <state key="selected" image="plato_selected"/>
                                                         <connections>
-                                                            <action selector="kantButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Rml-gl-ewy"/>
+                                                            <action selector="platoButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="OVV-F1-DRr"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbw-TZ-s8t">
                                                         <rect key="frame" x="0.0" y="340" width="196" height="150"/>
-                                                        <state key="normal" title="Button" image="heraclitus"/>
-                                                        <state key="selected" image="heraclitus_checked"/>
+                                                        <state key="normal" title="Button" image="seneca_named"/>
+                                                        <state key="selected" image="seneca_selected"/>
                                                         <connections>
-                                                            <action selector="heraclitusButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="pfr-Ay-kVx"/>
+                                                            <action selector="senecaButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="xo1-23-ld2"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNJ-x5-dCV">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNJ-x5-dCV">
                                                         <rect key="frame" x="0.0" y="510" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="aurelius_named"/>
+                                                        <state key="selected" image="aurelius_selected"/>
+                                                        <connections>
+                                                            <action selector="aureliusButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="HEE-GE-Ugc"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xk6-qC-nne">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xk6-qC-nne">
                                                         <rect key="frame" x="0.0" y="680" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="Locke_named"/>
+                                                        <state key="selected" image="Locke_selected"/>
+                                                        <connections>
+                                                            <action selector="lockeButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="NTq-Ot-7Jh"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-vH-Yg9">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-vH-Yg9">
                                                         <rect key="frame" x="0.0" y="850" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="goethe_named"/>
+                                                        <state key="selected" image="goethe_selected"/>
+                                                        <connections>
+                                                            <action selector="goetheButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="GnU-PU-cyi"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-gN-czI">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0M-gN-czI">
                                                         <rect key="frame" x="0.0" y="1020" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="kierkegaard_named"/>
+                                                        <state key="selected" image="kierkegaard_selected"/>
+                                                        <connections>
+                                                            <action selector="kierkegaardButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="qQN-ZC-4RK"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-6d-3ai">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-6d-3ai">
                                                         <rect key="frame" x="0.0" y="1190" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="nietzsche_named"/>
+                                                        <state key="selected" image="nietzsche_selected"/>
+                                                        <connections>
+                                                            <action selector="nietzscheButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="1er-Y4-5Yh"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6f-PJ-6ah">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6f-PJ-6ah">
                                                         <rect key="frame" x="0.0" y="1360" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="rand_named"/>
+                                                        <state key="selected" image="rand_selected"/>
+                                                        <connections>
+                                                            <action selector="randButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Spp-Cq-xzg"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-0q-sNx">
                                                         <rect key="frame" x="0.0" y="1530" width="196" height="150"/>
@@ -183,10 +207,10 @@
                                                         </constraints>
                                                         <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                                                        <state key="normal" title="Button" image="socrates"/>
-                                                        <state key="selected" image="Socrates_checked"/>
+                                                        <state key="normal" title="Button" image="suntzu_named"/>
+                                                        <state key="selected" image="suntzu_checked"/>
                                                         <connections>
-                                                            <action selector="socButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="1po-Ad-Rer"/>
+                                                            <action selector="suntzuButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="DGl-lR-Kdh"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phf-bn-QlG">
@@ -194,43 +218,67 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="RIZ-Xf-V3g"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="plato"/>
-                                                        <state key="selected" image="plato_selected"/>
+                                                        <state key="normal" title="Button" image="socrates_named"/>
+                                                        <state key="selected" image="socrates_checked"/>
                                                         <connections>
-                                                            <action selector="platoButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="wAi-rp-Qbv"/>
+                                                            <action selector="socratesButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="ZiZ-Lp-CRh"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5M-Fo-rVD">
                                                         <rect key="frame" x="0.0" y="340" width="196" height="150"/>
-                                                        <state key="normal" title="Button" image="suntzu"/>
-                                                        <state key="selected" image="sun_tzu_checked"/>
+                                                        <state key="normal" title="Button" image="aristotle_name"/>
+                                                        <state key="selected" image="aristotle_selected"/>
                                                         <connections>
-                                                            <action selector="suntzuButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="VfQ-iU-Gc9"/>
+                                                            <action selector="aristotleButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="eho-Y5-P79"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj1-Ql-u8N">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oj1-Ql-u8N">
                                                         <rect key="frame" x="0.0" y="510" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="epictetus_named"/>
+                                                        <state key="selected" image="epictetus_selected"/>
+                                                        <connections>
+                                                            <action selector="epictetusButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="F08-v2-HPX"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN5-Zz-L3B">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN5-Zz-L3B">
                                                         <rect key="frame" x="0.0" y="680" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="descartes_named"/>
+                                                        <state key="selected" image="descartes_selected"/>
+                                                        <connections>
+                                                            <action selector="descartesButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="bnd-gf-LCz"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku5-VT-bMN">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku5-VT-bMN">
                                                         <rect key="frame" x="0.0" y="850" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="kant_named"/>
+                                                        <state key="selected" image="kant_selected"/>
+                                                        <connections>
+                                                            <action selector="kantButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="FOr-tE-4Cm"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oY-ui-aFk">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oY-ui-aFk">
                                                         <rect key="frame" x="0.0" y="1020" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="ralphwaldoemerson_named"/>
+                                                        <state key="selected" image="ralphwaldoemerson_selected"/>
+                                                        <connections>
+                                                            <action selector="emersonButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Ogl-2Y-8gI"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-e5-W04">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-e5-W04">
                                                         <rect key="frame" x="0.0" y="1190" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="thoreau_named"/>
+                                                        <state key="selected" image="thoreau_selected"/>
+                                                        <connections>
+                                                            <action selector="thoreauButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="0Cs-GY-AU4"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdj-1H-8p8">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdj-1H-8p8">
                                                         <rect key="frame" x="0.0" y="1360" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="frankl_named"/>
+                                                        <state key="selected" image="frankl_selected"/>
+                                                        <connections>
+                                                            <action selector="franklButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="ExU-YE-daG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-Zs-2Xn">
                                                         <rect key="frame" x="0.0" y="1530" width="196" height="150"/>
@@ -309,6 +357,7 @@
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmr-hg-mKE">
                                 <rect key="frame" x="0.0" y="34" width="414" height="44"/>
+                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boE-WR-IyY">
                                 <rect key="frame" x="364" y="41" width="30" height="30"/>
@@ -327,7 +376,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="Vmr-hg-mKE" firstAttribute="trailing" secondItem="cfA-0L-3Lx" secondAttribute="trailing" id="093-cI-nWu"/>
                             <constraint firstItem="w3F-oH-Odn" firstAttribute="bottom" secondItem="cfA-0L-3Lx" secondAttribute="bottom" constant="-34" id="0mo-CV-Zs3"/>
@@ -344,6 +393,26 @@
                     </view>
                     <navigationItem key="navigationItem" id="j6n-mX-KZY"/>
                     <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="aristotleButton" destination="D5M-Fo-rVD" id="8kt-N8-WhT"/>
+                        <outlet property="aureliusButton" destination="QNJ-x5-dCV" id="T8F-Qo-bgr"/>
+                        <outlet property="descartesButton" destination="eN5-Zz-L3B" id="ETn-ex-qhT"/>
+                        <outlet property="emersonButton" destination="8oY-ui-aFk" id="sg3-l1-aEG"/>
+                        <outlet property="epictetusButton" destination="oj1-Ql-u8N" id="lWz-ei-bYq"/>
+                        <outlet property="franklButton" destination="fdj-1H-8p8" id="SZN-9S-4hx"/>
+                        <outlet property="goetheButton" destination="oIH-vH-Yg9" id="qN3-d1-58E"/>
+                        <outlet property="heraclitusButton" destination="alq-BW-wfW" id="9Qe-0R-QNM"/>
+                        <outlet property="kantButton" destination="Ku5-VT-bMN" id="vZN-fF-EQL"/>
+                        <outlet property="kierkegaardButton" destination="r0M-gN-czI" id="Vy1-e6-Nox"/>
+                        <outlet property="lockeButton" destination="xk6-qC-nne" id="bYK-P3-vks"/>
+                        <outlet property="nietzscheButton" destination="09Y-6d-3ai" id="KNs-Ah-xiL"/>
+                        <outlet property="platoButton" destination="s5a-4Y-XEf" id="zoc-Ac-PBF"/>
+                        <outlet property="randButton" destination="m6f-PJ-6ah" id="Ixp-1G-pUE"/>
+                        <outlet property="senecaButton" destination="Hbw-TZ-s8t" id="PBr-If-uGL"/>
+                        <outlet property="socratesButton" destination="phf-bn-QlG" id="YRp-2v-Wg5"/>
+                        <outlet property="suntzuButton" destination="5wv-4S-cey" id="ynK-dd-1gF"/>
+                        <outlet property="thoreauButton" destination="S2K-e5-W04" id="EXS-FN-rah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSL-cl-rJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,6 +518,74 @@
             </objects>
             <point key="canvasLocation" x="3125" y="62"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2Rp-pe-36o">
+            <objects>
+                <viewController id="OqB-ut-KFf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8q-Ik-4RX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What time of the day would you like a quote delivered?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqP-3X-HIV">
+                                <rect key="frame" x="20" y="77" width="374" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="39"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="YYs-1X-5Px">
+                                <rect key="frame" x="20" y="614" width="374" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CpA-YG-WFP" customClass="RoundButton" customModule="Daily_quotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.30362170109999997" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Edj-h6-2dx"/>
+                                            <constraint firstAttribute="width" constant="374" id="ZaU-9x-05d"/>
+                                        </constraints>
+                                        <state key="normal" title="Morning">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-eg-jLj" customClass="RoundButton" customModule="Daily_quotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.30362170109999997" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="F1P-jR-CN1"/>
+                                            <constraint firstAttribute="width" constant="374" id="HS1-L7-BV4"/>
+                                        </constraints>
+                                        <state key="normal" title="Evening">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-FT-bxY">
+                                        <rect key="frame" x="0.0" y="134" width="374" height="30"/>
+                                        <state key="normal" title="Skip"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JDq-Aa-c8D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VD2-vh-9A9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060.8695652173915" y="-855.13392857142856"/>
+        </scene>
         <!--Quote View Controller-->
         <scene sceneID="i7E-3Z-chQ">
             <objects>
@@ -457,25 +594,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-l1-DDJ">
-                                <rect key="frame" x="20" y="88" width="374" height="496"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="43" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-l1-DDJ">
+                                <rect key="frame" x="20" y="74" width="374" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyy-FB-CKA">
-                                <rect key="frame" x="168" y="820" width="78" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next Quote"/>
-                                <connections>
-                                    <action selector="nextQuoteButton:" destination="fjp-51-GPL" eventType="touchUpInside" id="UUL-6A-kPY"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alZ-NF-r8j">
-                                <rect key="frame" x="144" y="766" width="126" height="26"/>
+                                <rect key="frame" x="144" y="766" width="126" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -491,6 +620,28 @@
                                     <segue destination="tpM-1S-yPv" kind="presentation" modalPresentationStyle="fullScreen" id="xaM-XZ-hIz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzB-Y6-GYE" customClass="RoundButton" customModule="Daily_quotes" customModuleProvider="target">
+                                <rect key="frame" x="129" y="809" width="157" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.30362170109999997" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="UgF-uV-dEL"/>
+                                    <constraint firstAttribute="height" constant="40" id="nO9-nM-jB6"/>
+                                </constraints>
+                                <state key="normal" title="Next Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextQuoteButton:" destination="fjp-51-GPL" eventType="touchUpInside" id="zl2-EH-hno"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hc1-E0-qaP"/>
@@ -504,26 +655,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEq-bK-9x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="62"/>
+            <point key="canvasLocation" x="1976.8115942028987" y="61.607142857142854"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hjx-Lm-iYz"/>
-        <segue reference="wvX-jk-iHE"/>
+        <segue reference="xaM-XZ-hIz"/>
+        <segue reference="VQb-xb-wSW"/>
+        <segue reference="F85-eA-DaP"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Aristotle checked" width="1200" height="1200"/>
-        <image name="Kant_selected" width="1000" height="1000"/>
-        <image name="Socrates_checked" width="468" height="566"/>
-        <image name="aristotle" width="1200" height="1200"/>
-        <image name="heraclitus" width="1666" height="1666"/>
-        <image name="heraclitus_checked" width="1666" height="1666"/>
-        <image name="kant" width="1009" height="1317"/>
-        <image name="plato" width="1049" height="1049"/>
+        <image name="Locke_named" width="1049" height="1049"/>
+        <image name="Locke_selected" width="1049" height="1049"/>
+        <image name="aristotle_name" width="1049" height="1049"/>
+        <image name="aristotle_selected" width="1049" height="1049"/>
+        <image name="aurelius_named" width="1049" height="1049"/>
+        <image name="aurelius_selected" width="1049" height="1049"/>
+        <image name="descartes_named" width="1049" height="1049"/>
+        <image name="descartes_selected" width="1049" height="1049"/>
+        <image name="epictetus_named" width="1049" height="1049"/>
+        <image name="epictetus_selected" width="1049" height="1049"/>
+        <image name="frankl_named" width="1049" height="1049"/>
+        <image name="frankl_selected" width="1049" height="1049"/>
+        <image name="goethe_named" width="1049" height="1049"/>
+        <image name="goethe_selected" width="1049" height="1049"/>
+        <image name="heraclitus_named" width="1049" height="1049"/>
+        <image name="heraclitus_selected" width="1049" height="1049"/>
+        <image name="kant_named" width="1049" height="1049"/>
+        <image name="kant_selected" width="1049" height="1049"/>
+        <image name="kierkegaard_named" width="1049" height="1049"/>
+        <image name="kierkegaard_selected" width="1049" height="1049"/>
+        <image name="nietzsche_named" width="1049" height="1049"/>
+        <image name="nietzsche_selected" width="1049" height="1049"/>
+        <image name="plato_named" width="1049" height="1049"/>
         <image name="plato_selected" width="1049" height="1049"/>
-        <image name="socrates" width="468" height="566"/>
+        <image name="ralphwaldoemerson_named" width="1049" height="1049"/>
+        <image name="ralphwaldoemerson_selected" width="1049" height="1049"/>
+        <image name="rand_named" width="1049" height="1049"/>
+        <image name="rand_selected" width="1049" height="1049"/>
+        <image name="seneca_named" width="1049" height="1049"/>
+        <image name="seneca_selected" width="1049" height="1049"/>
+        <image name="socrates_checked" width="1049" height="1049"/>
+        <image name="socrates_named" width="1049" height="1049"/>
         <image name="staroflife.fill" catalog="system" width="124" height="128"/>
-        <image name="sun_tzu_checked" width="2418" height="2417"/>
-        <image name="suntzu" width="2418" height="2417"/>
+        <image name="suntzu_checked" width="1049" height="1049"/>
+        <image name="suntzu_named" width="1049" height="1049"/>
+        <image name="thoreau_named" width="1049" height="1049"/>
+        <image name="thoreau_selected" width="1049" height="1049"/>
     </resources>
 </document>

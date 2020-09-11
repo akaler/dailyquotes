@@ -9,13 +9,94 @@
 import UIKit
 
 class selectViewController: UIViewController {
+    @IBOutlet weak var heraclitusButton: UIButton!
+    
+    @IBOutlet weak var suntzuButton: UIButton!
+    @IBOutlet weak var socratesButton: UIButton!
+    @IBOutlet weak var platoButton: UIButton!
+    @IBOutlet weak var aristotleButton: UIButton!
+    @IBOutlet weak var senecaButton: UIButton!
+    @IBOutlet weak var epictetusButton: UIButton!
+    @IBOutlet weak var aureliusButton: UIButton!
+    @IBOutlet weak var descartesButton: UIButton!
+    @IBOutlet weak var lockeButton: UIButton!
+    @IBOutlet weak var kantButton: UIButton!
+    @IBOutlet weak var goetheButton: UIButton!
+    @IBOutlet weak var emersonButton: UIButton!
+    @IBOutlet weak var kierkegaardButton: UIButton!
+    @IBOutlet weak var thoreauButton: UIButton!
+    @IBOutlet weak var nietzscheButton: UIButton!
+    @IBOutlet weak var franklButton: UIButton!
+    @IBOutlet weak var randButton: UIButton!
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dict : [String : Bool] = ["socrates": false, "aristotle" : false, "plato": false, "kant" : false, "suntzu": false, "heraclitus": true]
+       if (UserDefaults.standard.bool(forKey: "saved") == false)
+       {
+        
+        let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false]
         defaults.set(25, forKey: "Age")
         defaults.set( dict, forKey: "dict")
+        }
+       // heraclitusButton.sendActions(for: .touchUpInside)
+        
+        if (UserDefaults.standard.bool(forKey: "saved") == true)
+        {
+        let dict = UserDefaults.standard.dictionary(forKey:"dict")!
+        for (philosopher, boolean) in dict{
+            if boolean as! Bool == true
+            {
+                print(philosopher)
+                
+                switch philosopher
+                {
+                case "aristotle": aristotleButton.sendActions(for: .touchUpInside)
+                        
+                    case "plato":
+                        platoButton.sendActions(for: .touchUpInside)
+                    case"socrates":
+                        socratesButton.sendActions(for: .touchUpInside)
+                    case "kant":
+                        kantButton.sendActions(for: .touchUpInside)
+                    case "suntzu":
+                        suntzuButton.sendActions(for: .touchUpInside)
+                    case "heraclitus":
+                        heraclitusButton.sendActions(for: .touchUpInside)
+                    case "descartes":
+                        descartesButton.sendActions(for: .touchUpInside)
+                    case "emerson":
+                        emersonButton.sendActions(for: .touchUpInside)
+                    case "epictetus":
+                        epictetusButton.sendActions(for: .touchUpInside)
+                    case "frankl":
+                        franklButton.sendActions(for: .touchUpInside)
+                    case "goethe":
+                        goetheButton.sendActions(for: .touchUpInside)
+                    case "kierkegaard":
+                        kierkegaardButton.sendActions(for: .touchUpInside)
+                    case "locke":
+                        lockeButton.sendActions(for: .touchUpInside)
+                    case "aurelius":
+                        aureliusButton.sendActions(for: .touchUpInside)
+                    case "nietzsche":
+                        nietzscheButton.sendActions(for: .touchUpInside)
+                    case "rand":
+                        randButton.sendActions(for: .touchUpInside)
+                    case "seneca":
+                        senecaButton.sendActions(for: .touchUpInside)
+                    case "thoreau":
+                        thoreauButton.sendActions(for: .touchUpInside)
+                        //thoreauButtonPressed(thoreauButton)
+                    default:
+                        print("there was nothing to select ")
+                }
+ 
+            }
+ 
+            
+            }
+        }
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -24,28 +105,79 @@ class selectViewController: UIViewController {
     @IBAction func testButtonPressed(_ sender: Any) {
         print(UserDefaults.standard.dictionary(forKey:"dict")!)
     }
-    @IBAction func socButtonPressed(_ sender: UIButton) {
-        button_logic(sender_arg: sender, phil_name: "socrates")
+    
+    @IBAction func suntzuButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "suntzu")
     }
 
-    @IBAction func aristotleButtonPressed(_ sender: UIButton) {
-        button_logic(sender_arg: sender, phil_name: "aristotle")
+    @IBAction func heraclitusButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "heraclitus")
+    }
+    
+    @IBAction func socratesButtonPressed(_ sender: UIButton){
+        button_logic(sender_arg: sender, phil_name: "socrates")
     }
     
     @IBAction func platoButtonPressed(_ sender: UIButton) {
         button_logic(sender_arg: sender, phil_name: "plato")
     }
-
+    @IBAction func aristotleButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "aristotle")
+    }
+    @IBAction func senecaButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "seneca")
+    }
+    @IBAction func epictetusButtonPressed(_ sender: UIButton) {        button_logic(sender_arg: sender, phil_name: "epictetus")
+    }
+    
+    @IBAction func aureliusButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "aurelius")
+    }
+    
+    @IBAction func descartesButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "descartes")
+    }
+    
+    @IBAction func lockeButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "locke")
+    }
+    
     @IBAction func kantButtonPressed(_ sender: UIButton) {
         button_logic(sender_arg: sender, phil_name: "kant")
     }
+    @IBAction func goetheButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "goethe")
+    }
+    @IBAction func emersonButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "emerson")
+    }
+    @IBAction func kierkegaardButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "kierkegaard")
+    }
     
-    @IBAction func suntzuButtonPressed(_ sender: UIButton) {
-        button_logic(sender_arg: sender, phil_name: "suntzu")
+    @IBAction func thoreauButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "thoreau")
     }
-    @IBAction func heraclitusButtonPressed(_ sender: UIButton) {
-        button_logic(sender_arg: sender, phil_name: "heraclitus")
+    
+    @IBAction func nietzscheButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "nietzsche")
     }
+    
+    @IBAction func franklButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "frankl")
+    }
+    
+    @IBAction func randButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "rand")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     fileprivate func button_logic(sender_arg : UIButton, phil_name: String)
     {
         if sender_arg.isSelected{
