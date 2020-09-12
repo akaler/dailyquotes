@@ -34,7 +34,6 @@ class selectViewController: UIViewController {
         
        if (UserDefaults.standard.bool(forKey: "saved") == false)
        {
-        
         let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false]
         defaults.set(25, forKey: "Age")
         defaults.set( dict, forKey: "dict")
@@ -93,8 +92,6 @@ class selectViewController: UIViewController {
                 }
  
             }
- 
-            
             }
         }
     }
@@ -103,13 +100,7 @@ class selectViewController: UIViewController {
         return .lightContent
     }
     
-    @IBAction func nextButtonPressed(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: "saved")
-    }
-    @IBAction func testButtonPressed(_ sender: Any) {
-        print(UserDefaults.standard.dictionary(forKey:"dict")!)
-    }
-    
+
     @IBAction func suntzuButtonPressed(_ sender: UIButton) {
         button_logic(sender_arg: sender, phil_name: "suntzu")
     }
@@ -131,7 +122,8 @@ class selectViewController: UIViewController {
     @IBAction func senecaButtonPressed(_ sender: UIButton) {
         button_logic(sender_arg: sender, phil_name: "seneca")
     }
-    @IBAction func epictetusButtonPressed(_ sender: UIButton) {        button_logic(sender_arg: sender, phil_name: "epictetus")
+    @IBAction func epictetusButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "epictetus")
     }
     
     @IBAction func aureliusButtonPressed(_ sender: UIButton) {
@@ -177,6 +169,32 @@ class selectViewController: UIViewController {
     
     
     
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        let dict = UserDefaults.standard.dictionary(forKey:"dict")!
+        var atleast_one_philosopher_selected = false
+        for (_, boolean) in dict {
+            if boolean as! Bool == true
+            {
+                atleast_one_philosopher_selected = true
+                break
+            }
+        }
+        if (atleast_one_philosopher_selected == false)
+        {
+            let alertController = UIAlertController(title: "No philosphers were selected", message: "You must select atleast one philosopher before proceeding. Try again", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else
+        {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "quotes")
+            nextViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            self.present(nextViewController, animated:true, completion:nil)
+            //self.present(nextViewController, animated: true,completion:)
+        }
+    }
+
     
     
     

@@ -29,6 +29,8 @@
 		707B05FB2509AAE900BCFD3C /* Rand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FA2509AAE900BCFD3C /* Rand.swift */; };
 		707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FC2509AB5B00BCFD3C /* Seneca.swift */; };
 		707B05FF2509ABA000BCFD3C /* Thoreau.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FE2509ABA000BCFD3C /* Thoreau.swift */; };
+		70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */; };
+		70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */; };
 		70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32824DA2C5500A6A196 /* AppDelegate.swift */; };
 		70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */; };
 		70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32C24DA2C5500A6A196 /* ViewController.swift */; };
@@ -68,6 +70,8 @@
 		707B05FA2509AAE900BCFD3C /* Rand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rand.swift; sourceTree = "<group>"; };
 		707B05FC2509AB5B00BCFD3C /* Seneca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
 		707B05FE2509ABA000BCFD3C /* Thoreau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoreau.swift; sourceTree = "<group>"; };
+		70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
+		70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 		70D2E32524DA2C5500A6A196 /* Daily quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				703C3CD024F459D00026038E /* selectViewController.swift */,
 				703C3CD824F5AB350026038E /* quoteViewController.swift */,
 				70DD6C342500632D000923FA /* settingsViewController.swift */,
+				70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				70DD6C3725016F28000923FA /* RoundButton.swift */,
+				70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */,
 			);
 			path = "Custom Classes";
 			sourceTree = "<group>";
@@ -325,7 +331,9 @@
 				703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */,
 				707B05F72509AA2100BCFD3C /* Aurelius.swift in Sources */,
 				70DD6C352500632D000923FA /* settingsViewController.swift in Sources */,
+				70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */,
 				707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */,
+				70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */,
 				707B05ED2509A8B700BCFD3C /* Goethe.swift in Sources */,
 				703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */,
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,

@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import UserNotifications
+
+
+
 
 var last_index = 0
 
@@ -132,16 +136,18 @@ class quoteViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var philosopherImageView: UIImageView!
     @IBOutlet weak var philospherNameLabel: UILabel!
+    @IBOutlet weak var nextQuoteButton: RoundButton!
     var user_selected_phil_arr : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         let user_selected_phil_dictionary = UserDefaults.standard.dictionary(forKey:"dict")!
-        
+        UserDefaults.standard.set(true, forKey: "saved")
         for (philospher, ischoosen) in user_selected_phil_dictionary {     // initializing user_selected_phil_arr
             if ischoosen as! Bool{
                 user_selected_phil_arr.append(philospher)
             }
         }
+        nextQuoteButton.sendActions(for: .touchUpInside)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -163,8 +169,17 @@ class quoteViewController: UIViewController {
         
         philosopherImageView.image = UIImage(named: randomly_choosen_philsopher)
         
+        
+    }
+    public func notification_quote() -> String{
+        let count_of_selected_philosphers = user_selected_phil_arr.count
+        
+        let randomly_choosen_philsopher : String = user_selected_phil_arr[Int.random(in: 0 ..< count_of_selected_philosphers)]
+        let quote = get_random_quote(phil_name: randomly_choosen_philsopher)
+        return quote
     }
 }
+
 
 
 

@@ -9,14 +9,20 @@
 import UIKit
 import CoreData
 
+
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+   
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
         /*
         if (UserDefaults.standard.bool(forKey: "notFirstInApp") == false){
             UserDefaults.standard.set(true, forKey: "notFirstInApp")
