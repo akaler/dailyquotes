@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Animation View Controller-->
         <scene sceneID="dJH-Ee-qgh">
             <objects>
-                <viewController storyboardIdentifier="getstarted" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sYC-T2-ZoA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getstarted" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sYC-T2-ZoA" customClass="animationViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="getstarted" id="Mgc-Cx-161">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,12 +20,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlp-fh-zOO" customClass="RoundButton" customModule="Daily_quotes" customModuleProvider="target">
-                                <rect key="frame" x="129" y="672" width="157" height="40"/>
+                                <rect key="frame" x="134" y="684" width="147" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Begin">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -40,22 +40,14 @@
                                     <segue destination="dTz-8L-PZx" kind="presentation" modalPresentationStyle="fullScreen" id="45s-ug-zXh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thousands of quotes from your favorite thinkers delivered daily" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8V8-e1-sN5">
-                                <rect key="frame" x="20" y="44" width="374" height="214"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="37"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="8V8-e1-sN5" firstAttribute="top" secondItem="An2-y3-Pu2" secondAttribute="top" constant="139" id="ouk-33-E6H"/>
-                            <constraint firstItem="An2-y3-Pu2" firstAttribute="trailing" secondItem="8V8-e1-sN5" secondAttribute="trailing" constant="23" id="tfh-eQ-tyK"/>
-                            <constraint firstItem="8V8-e1-sN5" firstAttribute="leading" secondItem="An2-y3-Pu2" secondAttribute="leading" constant="24" id="uh0-e2-VxS"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="An2-y3-Pu2"/>
                     </view>
                     <navigationItem key="navigationItem" id="xJs-HW-mE7"/>
+                    <connections>
+                        <outlet property="schoolImage" destination="T6F-co-Sxx" id="H5S-fD-Tnn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvG-yE-Cct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +65,7 @@
                                 <rect key="frame" x="0.0" y="78" width="414" height="2022"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN5-Zc-QBb" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2047"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1891"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your philsophers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGg-3w-tLm">
                                                 <rect key="frame" x="52" y="8" width="310" height="75"/>
@@ -85,7 +77,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="evA-Rq-td9">
-                                                <rect key="frame" x="210" y="90.5" width="196" height="1866"/>
+                                                <rect key="frame" x="210" y="90.5" width="196" height="1710"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alq-BW-wfW">
                                                         <rect key="frame" x="0.0" y="0.0" width="196" height="150"/>
@@ -171,16 +163,16 @@
                                                             <action selector="randButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="Spp-Cq-xzg"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-0q-sNx">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0C-0q-sNx">
                                                         <rect key="frame" x="0.0" y="1404" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="schopenhauer_named"/>
+                                                        <state key="selected" image="schopenhauer_selected"/>
+                                                        <connections>
+                                                            <action selector="schopenhauerButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="K9u-II-YDD"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6Q-IG-u9l">
                                                         <rect key="frame" x="0.0" y="1560" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEh-E4-xXf">
-                                                        <rect key="frame" x="0.0" y="1716" width="196" height="150"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -191,20 +183,18 @@
                                                     <constraint firstItem="Hbw-TZ-s8t" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="75c-YZ-XdD"/>
                                                     <constraint firstItem="QNJ-x5-dCV" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="I10-AC-0ZV"/>
                                                     <constraint firstItem="s5a-4Y-XEf" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="Lvz-gz-Zgd"/>
-                                                    <constraint firstItem="pEh-E4-xXf" firstAttribute="height" secondItem="alq-BW-wfW" secondAttribute="height" id="LyA-EF-6F1"/>
                                                     <constraint firstItem="m6f-PJ-6ah" firstAttribute="height" secondItem="oIH-vH-Yg9" secondAttribute="height" id="P1H-cm-SFc"/>
                                                     <constraint firstItem="oIH-vH-Yg9" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="TUw-S7-RTr"/>
                                                     <constraint firstItem="s5a-4Y-XEf" firstAttribute="height" secondItem="alq-BW-wfW" secondAttribute="height" id="ZRm-ba-XiQ"/>
                                                     <constraint firstItem="s6Q-IG-u9l" firstAttribute="height" secondItem="oIH-vH-Yg9" secondAttribute="height" id="bj5-zi-CjY"/>
                                                     <constraint firstItem="r0M-gN-czI" firstAttribute="height" secondItem="oIH-vH-Yg9" secondAttribute="height" id="ffN-4M-rIn"/>
                                                     <constraint firstItem="T0C-0q-sNx" firstAttribute="height" secondItem="oIH-vH-Yg9" secondAttribute="height" id="iWu-1f-4ji"/>
-                                                    <constraint firstItem="pEh-E4-xXf" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="l7o-hJ-EwS"/>
                                                     <constraint firstItem="xk6-qC-nne" firstAttribute="width" secondItem="alq-BW-wfW" secondAttribute="width" id="mnA-7N-KJ2"/>
                                                     <constraint firstItem="oIH-vH-Yg9" firstAttribute="height" secondItem="alq-BW-wfW" secondAttribute="height" id="sME-v3-DGC"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1mZ-Yy-u5A">
-                                                <rect key="frame" x="8" y="90.5" width="196" height="1866"/>
+                                                <rect key="frame" x="8" y="90.5" width="196" height="1710"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-4S-cey">
                                                         <rect key="frame" x="0.0" y="0.0" width="196" height="150"/>
@@ -289,16 +279,16 @@
                                                             <action selector="franklButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="ExU-YE-daG"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-Zs-2Xn">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-Zs-2Xn">
                                                         <rect key="frame" x="0.0" y="1404" width="196" height="150"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" title="Button" image="jung_named"/>
+                                                        <state key="selected" image="jung_selected"/>
+                                                        <connections>
+                                                            <action selector="jungButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="NLs-fj-E8R"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBF-3J-A0x">
                                                         <rect key="frame" x="0.0" y="1560" width="196" height="150"/>
-                                                        <state key="normal" title="Button" image="aristotle"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-0U-rYH">
-                                                        <rect key="frame" x="0.0" y="1716" width="196" height="150"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -319,7 +309,6 @@
                                                     <constraint firstItem="phf-bn-QlG" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="YMs-Dc-6xp"/>
                                                     <constraint firstItem="fdj-1H-8p8" firstAttribute="height" secondItem="Ku5-VT-bMN" secondAttribute="height" id="Yfz-n6-jUe"/>
                                                     <constraint firstItem="Ku5-VT-bMN" firstAttribute="width" secondItem="5wv-4S-cey" secondAttribute="width" id="Yvq-XS-cTJ"/>
-                                                    <constraint firstItem="mdt-0U-rYH" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="apQ-MI-klm"/>
                                                     <constraint firstItem="8oY-ui-aFk" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="br5-dn-CMY"/>
                                                     <constraint firstItem="8oY-ui-aFk" firstAttribute="height" secondItem="Ku5-VT-bMN" secondAttribute="height" id="g2e-AH-e63"/>
                                                     <constraint firstItem="5ZG-Zs-2Xn" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="gBl-Wd-b5A"/>
@@ -327,13 +316,12 @@
                                                     <constraint firstItem="D5M-Fo-rVD" firstAttribute="width" secondItem="5wv-4S-cey" secondAttribute="width" id="iml-Me-TSH"/>
                                                     <constraint firstItem="D5M-Fo-rVD" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="o41-Wa-cRj"/>
                                                     <constraint firstItem="S2K-e5-W04" firstAttribute="height" secondItem="Ku5-VT-bMN" secondAttribute="height" id="p3j-KR-bp0"/>
-                                                    <constraint firstItem="mdt-0U-rYH" firstAttribute="width" secondItem="5wv-4S-cey" secondAttribute="width" id="rV4-q0-FPs"/>
                                                     <constraint firstItem="Ku5-VT-bMN" firstAttribute="height" secondItem="5wv-4S-cey" secondAttribute="height" id="t7I-Br-EEU"/>
                                                     <constraint firstItem="FBF-3J-A0x" firstAttribute="height" secondItem="Ku5-VT-bMN" secondAttribute="height" id="vlu-Z3-EN7"/>
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buttom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHo-7a-YeF">
-                                                <rect key="frame" x="179" y="1964" width="56" height="20.5"/>
+                                                <rect key="frame" x="179" y="1808" width="56" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -373,9 +361,21 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dya-17-qpX">
                                 <rect key="frame" x="361" y="41" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="FO3-er-p6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTo-x6-LA2">
+                                <rect key="frame" x="11" y="41" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectAllButtonPressed:" destination="dTz-8L-PZx" eventType="touchUpInside" id="T7I-E4-QP0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -404,12 +404,14 @@
                         <outlet property="franklButton" destination="fdj-1H-8p8" id="SZN-9S-4hx"/>
                         <outlet property="goetheButton" destination="oIH-vH-Yg9" id="qN3-d1-58E"/>
                         <outlet property="heraclitusButton" destination="alq-BW-wfW" id="9Qe-0R-QNM"/>
+                        <outlet property="jungButton" destination="5ZG-Zs-2Xn" id="Mmj-8S-bg7"/>
                         <outlet property="kantButton" destination="Ku5-VT-bMN" id="vZN-fF-EQL"/>
                         <outlet property="kierkegaardButton" destination="r0M-gN-czI" id="Vy1-e6-Nox"/>
                         <outlet property="lockeButton" destination="xk6-qC-nne" id="bYK-P3-vks"/>
                         <outlet property="nietzscheButton" destination="09Y-6d-3ai" id="KNs-Ah-xiL"/>
                         <outlet property="platoButton" destination="s5a-4Y-XEf" id="zoc-Ac-PBF"/>
                         <outlet property="randButton" destination="m6f-PJ-6ah" id="Ixp-1G-pUE"/>
+                        <outlet property="schopenhauerButton" destination="T0C-0q-sNx" id="gQn-Gx-WcF"/>
                         <outlet property="senecaButton" destination="Hbw-TZ-s8t" id="PBr-If-uGL"/>
                         <outlet property="socratesButton" destination="phf-bn-QlG" id="YRp-2v-Wg5"/>
                         <outlet property="suntzuButton" destination="5wv-4S-cey" id="ynK-dd-1gF"/>
@@ -490,7 +492,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M2n-Ts-3mi">
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="M2n-Ts-3mi">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Settings" id="Vbk-Rq-gm1">
@@ -508,7 +510,11 @@
                             <constraint firstItem="qme-BY-2Gh" firstAttribute="top" secondItem="M2n-Ts-3mi" secondAttribute="bottom" constant="26" id="0kQ-IU-thu"/>
                             <constraint firstItem="t6K-wB-xcB" firstAttribute="trailing" secondItem="qme-BY-2Gh" secondAttribute="trailing" constant="20" id="4V1-Qz-E43"/>
                             <constraint firstItem="qme-BY-2Gh" firstAttribute="leading" secondItem="t6K-wB-xcB" secondAttribute="leading" constant="20" id="fL9-Xk-edq"/>
+                            <constraint firstItem="M2n-Ts-3mi" firstAttribute="leading" secondItem="t6K-wB-xcB" secondAttribute="leading" id="l2n-cN-FQS"/>
+                            <constraint firstItem="qme-BY-2Gh" firstAttribute="top" secondItem="M2n-Ts-3mi" secondAttribute="bottom" constant="26" id="lMv-Px-heJ"/>
                             <constraint firstItem="t6K-wB-xcB" firstAttribute="bottom" secondItem="qme-BY-2Gh" secondAttribute="bottom" constant="574" id="lSU-Fa-p00"/>
+                            <constraint firstItem="M2n-Ts-3mi" firstAttribute="top" secondItem="t6K-wB-xcB" secondAttribute="top" id="qrd-GT-Eto"/>
+                            <constraint firstItem="M2n-Ts-3mi" firstAttribute="trailing" secondItem="t6K-wB-xcB" secondAttribute="trailing" id="w8u-KK-u4p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t6K-wB-xcB"/>
                     </view>
@@ -526,7 +532,7 @@
         <!--Notification View Controller-->
         <scene sceneID="2Rp-pe-36o">
             <objects>
-                <viewController id="OqB-ut-KFf" customClass="notificationViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notify" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OqB-ut-KFf" customClass="notificationViewController" customModule="Daily_quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M8q-Ik-4RX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -555,6 +561,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="morningButtonPressed:" destination="OqB-ut-KFf" eventType="touchUpInside" id="3nY-gy-KO0"/>
+                                            <segue destination="fjp-51-GPL" kind="presentation" modalPresentationStyle="fullScreen" id="1Ma-RR-Xmb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AI-eg-jLj" customClass="RoundButton" customModule="Daily_quotes" customModuleProvider="target">
@@ -573,6 +580,10 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="eveningButtonPressed:" destination="OqB-ut-KFf" eventType="touchUpInside" id="vag-KX-ukn"/>
+                                            <segue destination="fjp-51-GPL" kind="presentation" modalPresentationStyle="fullScreen" id="mWq-B9-NiZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-FT-bxY">
                                         <rect key="frame" x="0.0" y="134" width="374" height="31"/>
@@ -586,14 +597,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvk-S8-Mag">
-                                <rect key="frame" x="129" y="456" width="156" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send notifications now"/>
-                                <connections>
-                                    <action selector="sendNotification:" destination="OqB-ut-KFf" eventType="touchUpInside" id="jmP-LB-0tX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time of the day would you like a quote delivered?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqP-3X-HIV">
                                 <rect key="frame" x="20" y="44" width="374" height="207"/>
                                 <constraints>
@@ -628,6 +631,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="school_of_Athenes" translatesAutoresizingMaskIntoConstraints="NO" id="Xem-ci-Jfs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pure-black-background-f82588d3" translatesAutoresizingMaskIntoConstraints="NO" id="2Er-X3-024">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="43" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-l1-DDJ">
                                 <rect key="frame" x="20" y="62" width="374" height="560"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -640,9 +651,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaR-ng-9Qh">
-                                <rect key="frame" x="371" y="44" width="23" height="23"/>
+                                <rect key="frame" x="347" y="36" width="26" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="gear_icon2"/>
+                                <state key="normal" title="Button" image="gear_icon3"/>
                                 <connections>
                                     <segue destination="tpM-1S-yPv" kind="presentation" modalPresentationStyle="fullScreen" id="xaM-XZ-hIz"/>
                                 </connections>
@@ -674,12 +685,23 @@
                                     <action selector="nextQuoteButton:" destination="fjp-51-GPL" eventType="touchUpInside" id="oAp-74-rbC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgy-Wi-P0y">
+                                <rect key="frame" x="38" y="36" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back_icon"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="fjp-51-GPL" eventType="touchUpInside" id="Pcp-U2-CMG"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hc1-E0-qaP"/>
                     </view>
                     <navigationItem key="navigationItem" id="RUU-91-tdt"/>
                     <connections>
+                        <outlet property="backButton" destination="Vgy-Wi-P0y" id="GrY-nL-mzw"/>
+                        <outlet property="backgroundImage" destination="Xem-ci-Jfs" id="kK2-xL-Yuq"/>
+                        <outlet property="blackImage" destination="2Er-X3-024" id="NYl-BZ-NId"/>
                         <outlet property="nextQuoteButton" destination="QwV-Rl-bvU" id="eX7-pK-4Eh"/>
                         <outlet property="philosopherImageView" destination="PF0-ig-toM" id="chX-JQ-dEg"/>
                         <outlet property="philospherNameLabel" destination="niz-B0-nJp" id="QmP-cV-4jh"/>
@@ -688,32 +710,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEq-bK-9x3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="62"/>
+            <point key="canvasLocation" x="1931.8840579710147" y="61.607142857142854"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uAd-ey-8q1"/>
+        <segue reference="xaM-XZ-hIz"/>
+        <segue reference="VQb-xb-wSW"/>
         <segue reference="45s-ug-zXh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Locke_named" width="1049" height="1049"/>
         <image name="Locke_selected" width="1049" height="1049"/>
-        <image name="aristotle" width="1049" height="1049"/>
         <image name="aristotle_name" width="1049" height="1049"/>
         <image name="aristotle_selected" width="1049" height="1049"/>
         <image name="aurelius_named" width="1049" height="1049"/>
         <image name="aurelius_selected" width="1049" height="1049"/>
+        <image name="back_icon" width="512" height="512"/>
         <image name="descartes_named" width="1049" height="1049"/>
         <image name="descartes_selected" width="1049" height="1049"/>
         <image name="epictetus_named" width="1049" height="1049"/>
         <image name="epictetus_selected" width="1049" height="1049"/>
         <image name="frankl_named" width="1049" height="1049"/>
         <image name="frankl_selected" width="1049" height="1049"/>
-        <image name="gear_icon2" width="200" height="200"/>
+        <image name="gear_icon3" width="926" height="980"/>
         <image name="goethe_named" width="1049" height="1049"/>
         <image name="goethe_selected" width="1049" height="1049"/>
         <image name="heraclitus_named" width="1049" height="1049"/>
         <image name="heraclitus_selected" width="1049" height="1049"/>
+        <image name="jung_named" width="1049" height="1049"/>
+        <image name="jung_selected" width="1049" height="1049"/>
         <image name="kant_named" width="1049" height="1049"/>
         <image name="kant_selected" width="1049" height="1049"/>
         <image name="kierkegaard_named" width="1049" height="1049"/>
@@ -722,11 +747,14 @@
         <image name="nietzsche_selected" width="1049" height="1049"/>
         <image name="plato_named" width="1049" height="1049"/>
         <image name="plato_selected" width="1049" height="1049"/>
+        <image name="pure-black-background-f82588d3" width="1200" height="600"/>
         <image name="ralphwaldoemerson_named" width="1049" height="1049"/>
         <image name="ralphwaldoemerson_selected" width="1049" height="1049"/>
         <image name="rand_named" width="1049" height="1049"/>
         <image name="rand_selected" width="1049" height="1049"/>
         <image name="school_of_Athenes" width="2784" height="2160"/>
+        <image name="schopenhauer_named" width="1049" height="1049"/>
+        <image name="schopenhauer_selected" width="1049" height="1049"/>
         <image name="seneca_named" width="1049" height="1049"/>
         <image name="seneca_selected" width="1049" height="1049"/>
         <image name="socrates_checked" width="1049" height="1049"/>

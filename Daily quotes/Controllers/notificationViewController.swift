@@ -75,13 +75,25 @@ class notificationViewController: UIViewController {
     
     @IBAction func morningButtonPressed(_ sender: Any) {
         requestNotificationAuthorization()
+        var dateComponent = DateComponents()
+        dateComponent.hour = 8
+        dateComponent.minute = 00
+        notificationPublisher.sendNotification(title: "Good morning", subtitle: "Your daily quote is ready", body: "", badge: 1, dateComponent: dateComponent)
+        
+    }
+    @IBAction func eveningButtonPressed(_ sender: Any) {
+        requestNotificationAuthorization()
+        var dateComponent = DateComponents()
+        dateComponent.hour = 19
+        dateComponent.minute = 00
+        notificationPublisher.sendNotification(title: "Good evening", subtitle: "Your daily quote is ready", body: "", badge: 1, dateComponent: dateComponent)
     }
     @IBAction func sendNotification(_ sender: Any) {
         
         //let quote = quoteViewController().notification_quote()
         
         print("sendNotificationButton button got called")
-        notificationPublisher.sendNotification(title: "Good morning", subtitle: "Your daily quote is ready", body: "", badge: 1, delayInterval: 61)
+        //notificationPublisher.sendNotification(title: "Good morning", subtitle: "Your daily quote is ready", body: "", badge: 1, delayInterval: 61)
     }
     
     

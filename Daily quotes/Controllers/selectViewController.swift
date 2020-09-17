@@ -28,17 +28,20 @@ class selectViewController: UIViewController {
     @IBOutlet weak var nietzscheButton: UIButton!
     @IBOutlet weak var franklButton: UIButton!
     @IBOutlet weak var randButton: UIButton!
+    @IBOutlet weak var jungButton: UIButton!
+
+    @IBOutlet weak var schopenhauerButton: UIButton!
+    
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         
        if (UserDefaults.standard.bool(forKey: "saved") == false)
        {
-        let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false]
+        let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false, "jung": false, "schopenhauer": false]
         defaults.set(25, forKey: "Age")
-        defaults.set( dict, forKey: "dict")
+        defaults.set(dict, forKey: "dict")
         }
-       // heraclitusButton.sendActions(for: .touchUpInside)
         
         if (UserDefaults.standard.bool(forKey: "saved") == true)
         {
@@ -47,11 +50,10 @@ class selectViewController: UIViewController {
             if boolean as! Bool == true
             {
                 print(philosopher)
-                
                 switch philosopher
                 {
-                case "aristotle": aristotleButton.sendActions(for: .touchUpInside)
-                        
+                    case "aristotle":
+                        aristotleButton.sendActions(for: .touchUpInside)
                     case "plato":
                         platoButton.sendActions(for: .touchUpInside)
                     case"socrates":
@@ -86,20 +88,22 @@ class selectViewController: UIViewController {
                         senecaButton.sendActions(for: .touchUpInside)
                     case "thoreau":
                         thoreauButton.sendActions(for: .touchUpInside)
-                        //thoreauButtonPressed(thoreauButton)
+                    case "jung":
+                        jungButton.sendActions(for: .touchUpInside)
+                    case "schopenhauer":
+                        schopenhauerButton.sendActions(for: .touchUpInside)
+                    //shopenhaur
                     default:
                         print("there was nothing to select ")
                 }
- 
-            }
             }
         }
     }
+}
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
 
     @IBAction func suntzuButtonPressed(_ sender: UIButton) {
         button_logic(sender_arg: sender, phil_name: "suntzu")
@@ -167,7 +171,13 @@ class selectViewController: UIViewController {
         button_logic(sender_arg: sender, phil_name: "rand")
     }
     
+    @IBAction func jungButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "jung")
+    }
     
+    @IBAction func schopenhauerButtonPressed(_ sender: UIButton) {
+        button_logic(sender_arg: sender, phil_name: "schopenhauer")
+    }
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         let dict = UserDefaults.standard.dictionary(forKey:"dict")!
@@ -185,6 +195,14 @@ class selectViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }
+            
+        else if (UserDefaults.standard.bool(forKey: "saved") == false)
+        {
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "notify")
+                nextViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                self.present(nextViewController, animated:true, completion:nil)
+        }
         else
         {
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -193,12 +211,8 @@ class selectViewController: UIViewController {
             self.present(nextViewController, animated:true, completion:nil)
             //self.present(nextViewController, animated: true,completion:)
         }
+        
     }
-
-    
-    
-    
-    
     
     fileprivate func button_logic(sender_arg : UIButton, phil_name: String)
     {
@@ -215,4 +229,32 @@ class selectViewController: UIViewController {
             UserDefaults.standard.set(rr, forKey: "dict")
         }
     }
+    
+    @IBAction func selectAllButtonPressed(_ sender: Any) {
+        let p_dict = UserDefaults.standard.dictionary(forKey:"dict")!
+            //print(user_selected_phil_dictionary["plato"])
+        if (p_dict["aristotle"] as! Bool == false) {aristotleButton.sendActions(for: .touchUpInside)}
+        if (p_dict["plato"] as! Bool == false){platoButton.sendActions(for: .touchUpInside)}
+        if (p_dict["socrates"] as! Bool == false){socratesButton.sendActions(for: .touchUpInside)}
+        if (p_dict["kant"] as! Bool == false){kantButton.sendActions(for: .touchUpInside)}
+        if (p_dict["suntzu"] as! Bool == false){suntzuButton.sendActions(for: .touchUpInside)}
+        if (p_dict["heraclitus"] as! Bool == false){heraclitusButton.sendActions(for: .touchUpInside)}
+        if (p_dict["descartes"] as! Bool == false){descartesButton.sendActions(for: .touchUpInside)}
+        if (p_dict["emerson"] as! Bool == false){emersonButton.sendActions(for: .touchUpInside)}
+        if (p_dict["epictetus"] as! Bool == false){epictetusButton.sendActions(for: .touchUpInside)}
+        if (p_dict["frankl"] as! Bool == false){franklButton.sendActions(for: .touchUpInside)}
+        if (p_dict["goethe"] as! Bool == false){goetheButton.sendActions(for: .touchUpInside)}
+        if (p_dict["kierkegaard"] as! Bool == false){kierkegaardButton.sendActions(for: .touchUpInside)}
+        if (p_dict["locke"] as! Bool == false){lockeButton.sendActions(for: .touchUpInside)}
+        if (p_dict["aurelius"] as! Bool == false){aureliusButton.sendActions(for: .touchUpInside)}
+        if (p_dict["nietzsche"] as! Bool == false){nietzscheButton.sendActions(for: .touchUpInside)}
+        if (p_dict["rand"] as! Bool == false){randButton.sendActions(for: .touchUpInside)}
+        if (p_dict["seneca"] as! Bool == false){senecaButton.sendActions(for: .touchUpInside)}
+        if (p_dict["thoreau"] as! Bool == false){thoreauButton.sendActions(for: .touchUpInside)}
+        if (p_dict["jung"] as! Bool == false){jungButton.sendActions(for: .touchUpInside)}
+        if (p_dict["schopenhauer"] as! Bool == false){ schopenhauerButton.sendActions(for: .touchUpInside)}
+                
+    }
+    
+    
 }

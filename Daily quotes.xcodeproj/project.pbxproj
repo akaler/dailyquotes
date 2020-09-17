@@ -16,6 +16,10 @@
 		703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1624F5D1390026038E /* platoQuotes.swift */; };
 		703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1824F5D4E10026038E /* aristotleQuotes.swift */; };
 		703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1A24F5D58A0026038E /* socratesQuotes.swift */; };
+		70717364250DD0FE00D36558 /* Jung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70717363250DD0FE00D36558 /* Jung.swift */; };
+		707173662511723F00D36558 /* Schopenhauer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707173652511723F00D36558 /* Schopenhauer.swift */; };
+		7071736825117A4D00D36558 /* albert_paintings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071736725117A4D00D36558 /* albert_paintings.xcassets */; };
+		7071736A2512F69600D36558 /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707173692512F69600D36558 /* animationViewController.swift */; };
 		707B05E52509A6FC00BCFD3C /* Descartes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E42509A6FC00BCFD3C /* Descartes.swift */; };
 		707B05E72509A73900BCFD3C /* Emerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E62509A73900BCFD3C /* Emerson.swift */; };
 		707B05E92509A76800BCFD3C /* Epictetus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E82509A76800BCFD3C /* Epictetus.swift */; };
@@ -57,6 +61,10 @@
 		703C3D1624F5D1390026038E /* platoQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platoQuotes.swift; sourceTree = "<group>"; };
 		703C3D1824F5D4E10026038E /* aristotleQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aristotleQuotes.swift; sourceTree = "<group>"; };
 		703C3D1A24F5D58A0026038E /* socratesQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socratesQuotes.swift; sourceTree = "<group>"; };
+		70717363250DD0FE00D36558 /* Jung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jung.swift; sourceTree = "<group>"; };
+		707173652511723F00D36558 /* Schopenhauer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schopenhauer.swift; sourceTree = "<group>"; };
+		7071736725117A4D00D36558 /* albert_paintings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = albert_paintings.xcassets; sourceTree = "<group>"; };
+		707173692512F69600D36558 /* animationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
 		707B05E42509A6FC00BCFD3C /* Descartes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descartes.swift; sourceTree = "<group>"; };
 		707B05E62509A73900BCFD3C /* Emerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emerson.swift; sourceTree = "<group>"; };
 		707B05E82509A76800BCFD3C /* Epictetus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epictetus.swift; sourceTree = "<group>"; };
@@ -141,6 +149,8 @@
 				707B05FA2509AAE900BCFD3C /* Rand.swift */,
 				707B05FC2509AB5B00BCFD3C /* Seneca.swift */,
 				707B05FE2509ABA000BCFD3C /* Thoreau.swift */,
+				70717363250DD0FE00D36558 /* Jung.swift */,
+				707173652511723F00D36558 /* Schopenhauer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 				70D2E32C24DA2C5500A6A196 /* ViewController.swift */,
 				70D2E32E24DA2C5500A6A196 /* Main.storyboard */,
 				70D2E33124DA2C5800A6A196 /* Assets.xcassets */,
+				7071736725117A4D00D36558 /* albert_paintings.xcassets */,
 				70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */,
 				70D2E33624DA2C5800A6A196 /* Info.plist */,
 				703C3CD624F5711E0026038E /* ButtonAnimation.swift */,
@@ -191,6 +202,7 @@
 				703C3CD824F5AB350026038E /* quoteViewController.swift */,
 				70DD6C342500632D000923FA /* settingsViewController.swift */,
 				70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */,
+				707173692512F69600D36558 /* animationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +280,7 @@
 				70D2E33524DA2C5800A6A196 /* LaunchScreen.storyboard in Resources */,
 				70D2E33224DA2C5800A6A196 /* Assets.xcassets in Resources */,
 				70D2E33024DA2C5500A6A196 /* Main.storyboard in Resources */,
+				7071736825117A4D00D36558 /* albert_paintings.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
 				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
 				703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */,
+				7071736A2512F69600D36558 /* animationViewController.swift in Sources */,
 				707B05F32509A9B900BCFD3C /* Kierkegaard.swift in Sources */,
 				703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */,
 				707B05EB2509A84300BCFD3C /* Frankl.swift in Sources */,
@@ -347,10 +361,12 @@
 				707B05F52509A9E300BCFD3C /* Locke.swift in Sources */,
 				707B05F12509A94000BCFD3C /* Kant.swift in Sources */,
 				707B05F92509AA6F00BCFD3C /* Nietzsche.swift in Sources */,
+				70717364250DD0FE00D36558 /* Jung.swift in Sources */,
 				70DD6C3825016F28000923FA /* RoundButton.swift in Sources */,
 				707B05E72509A73900BCFD3C /* Emerson.swift in Sources */,
 				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
 				707B05FB2509AAE900BCFD3C /* Rand.swift in Sources */,
+				707173662511723F00D36558 /* Schopenhauer.swift in Sources */,
 				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

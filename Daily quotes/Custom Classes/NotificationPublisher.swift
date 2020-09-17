@@ -10,12 +10,12 @@ import UIKit
 import UserNotifications
 
 class NotificationPublisher: NSObject {
-    func sendNotification(title: String, subtitle: String, body:String, badge: Int?, delayInterval: Int?) //,dateComponent: DateComponents?)
+    func sendNotification(title: String, subtitle: String, body:String, badge: Int?, dateComponent: DateComponents?) //, delayInterval: Int?
     {
         print("sendNotification function insdie of class Notification Publisher got called")
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = title
-        notificationContent.subtitle = "Daily Reminder!!"
+        notificationContent.subtitle = subtitle
         notificationContent.body = body
         /*
         var delayTimeTrigger: UNTimeIntervalNotificationTrigger?
@@ -24,11 +24,12 @@ class NotificationPublisher: NSObject {
         }
         */
         
-        var dateComponent = DateComponents()
-        dateComponent.hour = 21
-        dateComponent.minute = 57
         
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: true)
+        //var dateComponent = DateComponents()
+        //dateComponent.hour = 21
+        //dateComponent.minute = 57
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent!, repeats: true)
         
  
  
