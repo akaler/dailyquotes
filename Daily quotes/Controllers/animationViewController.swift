@@ -13,7 +13,7 @@ class animationViewController: UIViewController {
     @IBOutlet weak var schoolImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        schoolImage.alpha = 0.5
+        //schoolImage.alpha = 0.5
         // Do any additional setup after loading the view.
     }
     
