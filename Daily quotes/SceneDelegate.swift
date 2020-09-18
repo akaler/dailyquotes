@@ -22,13 +22,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         //print(UserDefaults.standard.dictionary(forKey: "dict") ?? nil)
-       
+       /*
         if (UserDefaults.standard.bool(forKey: "saved") == true){
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             let newInitStoryBoard = mainStoryBoard.instantiateViewController(withIdentifier: "quotes")
             self.window?.rootViewController = newInitStoryBoard
             self.window?.makeKeyAndVisible()
-        }
+        }*/
         
     }
 
@@ -44,12 +44,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         
         print("Scene did become active")
+        /*
         if (UserDefaults.standard.bool(forKey: "saved") == true){
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             let newInitStoryBoard = mainStoryBoard.instantiateViewController(withIdentifier: "quotes")
             self.window?.rootViewController = newInitStoryBoard
             self.window?.makeKeyAndVisible()
         }
+ */
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
