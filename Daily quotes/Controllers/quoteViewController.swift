@@ -170,6 +170,7 @@ class quoteViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var blackImage: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var navigationBar: UINavigationBar!
     var stack_index_tracker: Int = -1
     var user_selected_phil_arr : [String] = []
     var stack = Stack()
@@ -186,6 +187,10 @@ class quoteViewController: UIViewController {
         }
         nextQuoteButton.sendActions(for: .touchUpInside)
         set_background_image()
+        //setting navigation controller to transparent
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.isTranslucent = true
     }
     
     private func set_background_image()

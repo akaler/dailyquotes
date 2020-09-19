@@ -79,7 +79,7 @@ class notificationViewController: UIViewController {
         dateComponent.hour = 8
         dateComponent.minute = 00
         notificationPublisher.sendNotification(title: "Good morning", subtitle: "Your daily quote is ready", body: "", badge: 1, dateComponent: dateComponent)
-        
+        segue_to_quoteviewcontroller()
     }
     @IBAction func eveningButtonPressed(_ sender: Any) {
         requestNotificationAuthorization()
@@ -87,15 +87,16 @@ class notificationViewController: UIViewController {
         dateComponent.hour = 19
         dateComponent.minute = 00
         notificationPublisher.sendNotification(title: "Good evening", subtitle: "Your daily quote is ready", body: "", badge: 1, dateComponent: dateComponent)
+        segue_to_quoteviewcontroller()
     }
-    @IBAction func sendNotification(_ sender: Any) {
-        
-        //let quote = quoteViewController().notification_quote()
-        
-        print("sendNotificationButton button got called")
-        //notificationPublisher.sendNotification(title: "Good morning", subtitle: "Your daily quote is ready", body: "", badge: 1, delayInterval: 61)
+
+    private func segue_to_quoteviewcontroller()
+    {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "quotes")
+        nextViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(nextViewController, animated:true, completion:nil)
     }
-    
     
     /*
     // MARK: - Navigation

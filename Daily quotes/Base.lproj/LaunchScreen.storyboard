@@ -15,16 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-kt-bnL">
-                                <rect key="frame" x="99" y="344" width="216" height="209"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="school_of_Athenes" translatesAutoresizingMaskIntoConstraints="NO" id="ZSn-cZ-o1O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Yku-kt-bnL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="KMc-gL-kVu"/>
-                            <constraint firstItem="Yku-kt-bnL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="OHw-df-eyn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yku-kt-bnL" secondAttribute="trailing" constant="99" id="VYc-WS-nNM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yku-kt-bnL" secondAttribute="bottom" constant="309" id="W2o-5f-wUh"/>
+                            <constraint firstItem="ZSn-cZ-o1O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="G0I-Hx-Axk"/>
+                            <constraint firstAttribute="bottom" secondItem="ZSn-cZ-o1O" secondAttribute="bottom" id="Mxr-PG-sd0"/>
+                            <constraint firstItem="ZSn-cZ-o1O" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QZD-7b-3Kx"/>
+                            <constraint firstItem="ZSn-cZ-o1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nDS-El-2Cl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreenImage" width="500" height="500"/>
+        <image name="school_of_Athenes" width="2682" height="2160"/>
     </resources>
 </document>

@@ -80,7 +80,7 @@
 		707B05FE2509ABA000BCFD3C /* Thoreau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoreau.swift; sourceTree = "<group>"; };
 		70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
-		70D2E32524DA2C5500A6A196 /* Daily quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D2E32524DA2C5500A6A196 /* Daily Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		70D2E32C24DA2C5500A6A196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		70D2E32624DA2C5500A6A196 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70D2E32524DA2C5500A6A196 /* Daily quotes.app */,
+				70D2E32524DA2C5500A6A196 /* Daily Quotes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70D2E32424DA2C5500A6A196 /* Daily quotes */ = {
+		70D2E32424DA2C5500A6A196 /* Daily Quotes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily quotes" */;
+			buildConfigurationList = 70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily Quotes" */;
 			buildPhases = (
 				08FEA3986F43DC6BD9ECD255 /* [CP] Check Pods Manifest.lock */,
 				70D2E32124DA2C5500A6A196 /* Sources */,
@@ -233,9 +233,9 @@
 			);
 			dependencies = (
 			);
-			name = "Daily quotes";
+			name = "Daily Quotes";
 			productName = "Daily quotes";
-			productReference = 70D2E32524DA2C5500A6A196 /* Daily quotes.app */;
+			productReference = 70D2E32524DA2C5500A6A196 /* Daily Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +254,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily quotes" */;
+			buildConfigurationList = 70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily Quotes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -267,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70D2E32424DA2C5500A6A196 /* Daily quotes */,
+				70D2E32424DA2C5500A6A196 /* Daily Quotes */,
 			);
 		};
 /* End PBXProject section */
@@ -521,7 +521,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Daily Quotes";
 				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -543,7 +543,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Daily Quotes";
 				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,7 +553,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily quotes" */ = {
+		70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70D2E33724DA2C5800A6A196 /* Debug */,
@@ -562,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily quotes" */ = {
+		70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily Quotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70D2E33A24DA2C5800A6A196 /* Debug */,
