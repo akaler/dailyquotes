@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		703C3CD124F459D00026038E /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD024F459D00026038E /* selectViewController.swift */; };
+		703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD624F5711E0026038E /* ButtonAnimation.swift */; };
+		703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CD824F5AB350026038E /* quoteViewController.swift */; };
+		703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 703C3CDA24F5AF270026038E /* Model.xcdatamodeld */; };
+		703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */; };
+		703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */; };
+		703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1624F5D1390026038E /* platoQuotes.swift */; };
+		703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1824F5D4E10026038E /* aristotleQuotes.swift */; };
+		703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C3D1A24F5D58A0026038E /* socratesQuotes.swift */; };
+		70717364250DD0FE00D36558 /* Jung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70717363250DD0FE00D36558 /* Jung.swift */; };
+		707173662511723F00D36558 /* Schopenhauer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707173652511723F00D36558 /* Schopenhauer.swift */; };
+		7071736825117A4D00D36558 /* albert_paintings.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071736725117A4D00D36558 /* albert_paintings.xcassets */; };
+		7071736A2512F69600D36558 /* animationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707173692512F69600D36558 /* animationViewController.swift */; };
+		707B05E52509A6FC00BCFD3C /* Descartes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E42509A6FC00BCFD3C /* Descartes.swift */; };
+		707B05E72509A73900BCFD3C /* Emerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E62509A73900BCFD3C /* Emerson.swift */; };
+		707B05E92509A76800BCFD3C /* Epictetus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05E82509A76800BCFD3C /* Epictetus.swift */; };
+		707B05EB2509A84300BCFD3C /* Frankl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05EA2509A84300BCFD3C /* Frankl.swift */; };
+		707B05ED2509A8B700BCFD3C /* Goethe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05EC2509A8B700BCFD3C /* Goethe.swift */; };
+		707B05F12509A94000BCFD3C /* Kant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05F02509A94000BCFD3C /* Kant.swift */; };
+		707B05F32509A9B900BCFD3C /* Kierkegaard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05F22509A9B900BCFD3C /* Kierkegaard.swift */; };
+		707B05F52509A9E300BCFD3C /* Locke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05F42509A9E300BCFD3C /* Locke.swift */; };
+		707B05F72509AA2100BCFD3C /* Aurelius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05F62509AA2100BCFD3C /* Aurelius.swift */; };
+		707B05F92509AA6F00BCFD3C /* Nietzsche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05F82509AA6F00BCFD3C /* Nietzsche.swift */; };
+		707B05FB2509AAE900BCFD3C /* Rand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FA2509AAE900BCFD3C /* Rand.swift */; };
+		707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FC2509AB5B00BCFD3C /* Seneca.swift */; };
+		707B05FF2509ABA000BCFD3C /* Thoreau.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FE2509ABA000BCFD3C /* Thoreau.swift */; };
+		70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */; };
+		70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */; };
+		70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32824DA2C5500A6A196 /* AppDelegate.swift */; };
+		70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */; };
+		70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32C24DA2C5500A6A196 /* ViewController.swift */; };
+		70D2E33024DA2C5500A6A196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E32E24DA2C5500A6A196 /* Main.storyboard */; };
+		70D2E33224DA2C5800A6A196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33124DA2C5800A6A196 /* Assets.xcassets */; };
+		70D2E33524DA2C5800A6A196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */; };
+		70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */; };
+		70DC55BF251BFEAF00298266 /* LikedQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC55BE251BFEAF00298266 /* LikedQuotes.swift */; };
+		70DC55C1251C315F00298266 /* likedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC55C0251C315F00298266 /* likedViewController.swift */; };
+		70DD6C352500632D000923FA /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C342500632D000923FA /* settingsViewController.swift */; };
+		70DD6C3825016F28000923FA /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C3725016F28000923FA /* RoundButton.swift */; };
+		70DD6C3A2501BAED000923FA /* SunTzu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C392501BAED000923FA /* SunTzu.swift */; };
+		70DD6C3C2501D8E7000923FA /* Heraclitus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DD6C3B2501D8E7000923FA /* Heraclitus.swift */; };
+		786D01886BC58738BAE77329 /* Pods_Daily_quotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.debug.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.debug.xcconfig"; sourceTree = "<group>"; };
+		703C3CD024F459D00026038E /* selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
+		703C3CD624F5711E0026038E /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		703C3CD824F5AB350026038E /* quoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quoteViewController.swift; sourceTree = "<group>"; };
+		703C3CDB24F5AF270026038E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Philosophers+CoreDataClass.swift"; sourceTree = "<group>"; };
+		703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Philosophers+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		703C3D1124F5CECA0026038E /* Daily quotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Daily quotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		703C3D1624F5D1390026038E /* platoQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = platoQuotes.swift; sourceTree = "<group>"; };
+		703C3D1824F5D4E10026038E /* aristotleQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aristotleQuotes.swift; sourceTree = "<group>"; };
+		703C3D1A24F5D58A0026038E /* socratesQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socratesQuotes.swift; sourceTree = "<group>"; };
+		70717363250DD0FE00D36558 /* Jung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jung.swift; sourceTree = "<group>"; };
+		707173652511723F00D36558 /* Schopenhauer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schopenhauer.swift; sourceTree = "<group>"; };
+		7071736725117A4D00D36558 /* albert_paintings.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = albert_paintings.xcassets; sourceTree = "<group>"; };
+		707173692512F69600D36558 /* animationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animationViewController.swift; sourceTree = "<group>"; };
+		707B05E42509A6FC00BCFD3C /* Descartes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descartes.swift; sourceTree = "<group>"; };
+		707B05E62509A73900BCFD3C /* Emerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emerson.swift; sourceTree = "<group>"; };
+		707B05E82509A76800BCFD3C /* Epictetus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epictetus.swift; sourceTree = "<group>"; };
+		707B05EA2509A84300BCFD3C /* Frankl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frankl.swift; sourceTree = "<group>"; };
+		707B05EC2509A8B700BCFD3C /* Goethe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goethe.swift; sourceTree = "<group>"; };
+		707B05F02509A94000BCFD3C /* Kant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kant.swift; sourceTree = "<group>"; };
+		707B05F22509A9B900BCFD3C /* Kierkegaard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kierkegaard.swift; sourceTree = "<group>"; };
+		707B05F42509A9E300BCFD3C /* Locke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locke.swift; sourceTree = "<group>"; };
+		707B05F62509AA2100BCFD3C /* Aurelius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aurelius.swift; sourceTree = "<group>"; };
+		707B05F82509AA6F00BCFD3C /* Nietzsche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nietzsche.swift; sourceTree = "<group>"; };
+		707B05FA2509AAE900BCFD3C /* Rand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rand.swift; sourceTree = "<group>"; };
+		707B05FC2509AB5B00BCFD3C /* Seneca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
+		707B05FE2509ABA000BCFD3C /* Thoreau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoreau.swift; sourceTree = "<group>"; };
+		70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
+		70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
+		70D2E32524DA2C5500A6A196 /* Daily Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D2E32824DA2C5500A6A196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70D2E32C24DA2C5500A6A196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70D2E32F24DA2C5500A6A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70D2E33124DA2C5800A6A196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70D2E33424DA2C5800A6A196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70D2E33624DA2C5800A6A196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		70DC55BE251BFEAF00298266 /* LikedQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedQuotes.swift; sourceTree = "<group>"; };
+		70DC55C0251C315F00298266 /* likedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likedViewController.swift; sourceTree = "<group>"; };
+		70DD6C342500632D000923FA /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		70DD6C3725016F28000923FA /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		70DD6C392501BAED000923FA /* SunTzu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunTzu.swift; sourceTree = "<group>"; };
+		70DD6C3B2501D8E7000923FA /* Heraclitus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heraclitus.swift; sourceTree = "<group>"; };
+		9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily quotes.release.xcconfig"; path = "Target Support Files/Pods-Daily quotes/Pods-Daily quotes.release.xcconfig"; sourceTree = "<group>"; };
+		9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_quotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D2E32224DA2C5500A6A196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786D01886BC58738BAE77329 /* Pods_Daily_quotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BD76176081B5E395C5A0E1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */,
+				9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DAA626DF5CA5EE5B0AFEDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4570E4B6592789A49B07C9 /* Pods_Daily_quotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		703C3D0024F5BCCF0026038E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				703C3D0924F5C45B0026038E /* Philosophers+CoreDataClass.swift */,
+				703C3D0A24F5C45C0026038E /* Philosophers+CoreDataProperties.swift */,
+				703C3D1624F5D1390026038E /* platoQuotes.swift */,
+				703C3D1824F5D4E10026038E /* aristotleQuotes.swift */,
+				703C3D1A24F5D58A0026038E /* socratesQuotes.swift */,
+				70DD6C392501BAED000923FA /* SunTzu.swift */,
+				70DD6C3B2501D8E7000923FA /* Heraclitus.swift */,
+				707B05E42509A6FC00BCFD3C /* Descartes.swift */,
+				707B05E62509A73900BCFD3C /* Emerson.swift */,
+				707B05E82509A76800BCFD3C /* Epictetus.swift */,
+				707B05EA2509A84300BCFD3C /* Frankl.swift */,
+				707B05EC2509A8B700BCFD3C /* Goethe.swift */,
+				707B05F02509A94000BCFD3C /* Kant.swift */,
+				707B05F22509A9B900BCFD3C /* Kierkegaard.swift */,
+				707B05F42509A9E300BCFD3C /* Locke.swift */,
+				707B05F62509AA2100BCFD3C /* Aurelius.swift */,
+				707B05F82509AA6F00BCFD3C /* Nietzsche.swift */,
+				707B05FA2509AAE900BCFD3C /* Rand.swift */,
+				707B05FC2509AB5B00BCFD3C /* Seneca.swift */,
+				707B05FE2509ABA000BCFD3C /* Thoreau.swift */,
+				70717363250DD0FE00D36558 /* Jung.swift */,
+				707173652511723F00D36558 /* Schopenhauer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70D2E31C24DA2C5500A6A196 = {
+			isa = PBXGroup;
+			children = (
+				70D2E32724DA2C5500A6A196 /* Daily quotes */,
+				70D2E32624DA2C5500A6A196 /* Products */,
+				5BD76176081B5E395C5A0E1B /* Pods */,
+				5DAA626DF5CA5EE5B0AFEDFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70D2E32624DA2C5500A6A196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D2E32524DA2C5500A6A196 /* Daily Quotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D2E32724DA2C5500A6A196 /* Daily quotes */ = {
+			isa = PBXGroup;
+			children = (
+				70DD6C3625016EF4000923FA /* Custom Classes */,
+				703C3D0024F5BCCF0026038E /* Model */,
+				70D2E33C24DA2D1F00A6A196 /* Controllers */,
+				70D2E32824DA2C5500A6A196 /* AppDelegate.swift */,
+				70D2E32A24DA2C5500A6A196 /* SceneDelegate.swift */,
+				70D2E32C24DA2C5500A6A196 /* ViewController.swift */,
+				70D2E32E24DA2C5500A6A196 /* Main.storyboard */,
+				70D2E33124DA2C5800A6A196 /* Assets.xcassets */,
+				7071736725117A4D00D36558 /* albert_paintings.xcassets */,
+				70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */,
+				70D2E33624DA2C5800A6A196 /* Info.plist */,
+				703C3CD624F5711E0026038E /* ButtonAnimation.swift */,
+				703C3CDA24F5AF270026038E /* Model.xcdatamodeld */,
+				703C3D1124F5CECA0026038E /* Daily quotes-Bridging-Header.h */,
+			);
+			path = "Daily quotes";
+			sourceTree = "<group>";
+		};
+		70D2E33C24DA2D1F00A6A196 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70D2E33D24DA2D2F00A6A196 /* IntroViewController.swift */,
+				703C3CD024F459D00026038E /* selectViewController.swift */,
+				703C3CD824F5AB350026038E /* quoteViewController.swift */,
+				70DC55C0251C315F00298266 /* likedViewController.swift */,
+				70DD6C342500632D000923FA /* settingsViewController.swift */,
+				70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */,
+				707173692512F69600D36558 /* animationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		70DD6C3625016EF4000923FA /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				70DD6C3725016F28000923FA /* RoundButton.swift */,
+				70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */,
+				70DC55BE251BFEAF00298266 /* LikedQuotes.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D2E32424DA2C5500A6A196 /* Daily Quotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily Quotes" */;
+			buildPhases = (
+				08FEA3986F43DC6BD9ECD255 /* [CP] Check Pods Manifest.lock */,
+				70D2E32124DA2C5500A6A196 /* Sources */,
+				70D2E32224DA2C5500A6A196 /* Frameworks */,
+				70D2E32324DA2C5500A6A196 /* Resources */,
+				705806E33A3634DEF21A442A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daily Quotes";
+			productName = "Daily quotes";
+			productReference = 70D2E32524DA2C5500A6A196 /* Daily Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D2E31D24DA2C5500A6A196 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = KalerCorp.;
+				TargetAttributes = {
+					70D2E32424DA2C5500A6A196 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
+					};
+				};
+			};
+			buildConfigurationList = 70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily Quotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70D2E31C24DA2C5500A6A196;
+			productRefGroup = 70D2E32624DA2C5500A6A196 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D2E32424DA2C5500A6A196 /* Daily Quotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D2E32324DA2C5500A6A196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D2E33524DA2C5800A6A196 /* LaunchScreen.storyboard in Resources */,
+				70D2E33224DA2C5800A6A196 /* Assets.xcassets in Resources */,
+				70D2E33024DA2C5500A6A196 /* Main.storyboard in Resources */,
+				7071736825117A4D00D36558 /* albert_paintings.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08FEA3986F43DC6BD9ECD255 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daily quotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		705806E33A3634DEF21A442A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Daily quotes/Pods-Daily quotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D2E32124DA2C5500A6A196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703C3CD724F5711E0026038E /* ButtonAnimation.swift in Sources */,
+				70DD6C3A2501BAED000923FA /* SunTzu.swift in Sources */,
+				707B05FF2509ABA000BCFD3C /* Thoreau.swift in Sources */,
+				703C3CD924F5AB350026038E /* quoteViewController.swift in Sources */,
+				707B05E52509A6FC00BCFD3C /* Descartes.swift in Sources */,
+				703C3D1724F5D1390026038E /* platoQuotes.swift in Sources */,
+				70DD6C3C2501D8E7000923FA /* Heraclitus.swift in Sources */,
+				703C3D1B24F5D58A0026038E /* socratesQuotes.swift in Sources */,
+				703C3D0C24F5C45C0026038E /* Philosophers+CoreDataProperties.swift in Sources */,
+				70DC55C1251C315F00298266 /* likedViewController.swift in Sources */,
+				707B05F72509AA2100BCFD3C /* Aurelius.swift in Sources */,
+				70DD6C352500632D000923FA /* settingsViewController.swift in Sources */,
+				70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */,
+				707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */,
+				70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */,
+				707B05ED2509A8B700BCFD3C /* Goethe.swift in Sources */,
+				703C3D1924F5D4E10026038E /* aristotleQuotes.swift in Sources */,
+				70D2E32D24DA2C5500A6A196 /* ViewController.swift in Sources */,
+				70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */,
+				703C3CDC24F5AF270026038E /* Model.xcdatamodeld in Sources */,
+				7071736A2512F69600D36558 /* animationViewController.swift in Sources */,
+				707B05F32509A9B900BCFD3C /* Kierkegaard.swift in Sources */,
+				703C3D0B24F5C45C0026038E /* Philosophers+CoreDataClass.swift in Sources */,
+				707B05EB2509A84300BCFD3C /* Frankl.swift in Sources */,
+				703C3CD124F459D00026038E /* selectViewController.swift in Sources */,
+				707B05E92509A76800BCFD3C /* Epictetus.swift in Sources */,
+				707B05F52509A9E300BCFD3C /* Locke.swift in Sources */,
+				707B05F12509A94000BCFD3C /* Kant.swift in Sources */,
+				707B05F92509AA6F00BCFD3C /* Nietzsche.swift in Sources */,
+				70717364250DD0FE00D36558 /* Jung.swift in Sources */,
+				70DD6C3825016F28000923FA /* RoundButton.swift in Sources */,
+				707B05E72509A73900BCFD3C /* Emerson.swift in Sources */,
+				70D2E32B24DA2C5500A6A196 /* SceneDelegate.swift in Sources */,
+				707B05FB2509AAE900BCFD3C /* Rand.swift in Sources */,
+				707173662511723F00D36558 /* Schopenhauer.swift in Sources */,
+				70DC55BF251BFEAF00298266 /* LikedQuotes.swift in Sources */,
+				70D2E33E24DA2D2F00A6A196 /* IntroViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70D2E32E24DA2C5500A6A196 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D2E32F24DA2C5500A6A196 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70D2E33324DA2C5800A6A196 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D2E33424DA2C5800A6A196 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D2E33724DA2C5800A6A196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70D2E33824DA2C5800A6A196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70D2E33A24DA2C5800A6A196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F286EAB3E3C58DBD9A27587 /* Pods-Daily quotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
+				INFOPLIST_FILE = "Daily quotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
+				PRODUCT_NAME = "Daily Quotes";
+				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70D2E33B24DA2C5800A6A196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9827254A97193CF3C47DDA62 /* Pods-Daily quotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
+				INFOPLIST_FILE = "Daily quotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
+				PRODUCT_NAME = "Daily Quotes";
+				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D2E32024DA2C5500A6A196 /* Build configuration list for PBXProject "Daily Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D2E33724DA2C5800A6A196 /* Debug */,
+				70D2E33824DA2C5800A6A196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D2E33924DA2C5800A6A196 /* Build configuration list for PBXNativeTarget "Daily Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D2E33A24DA2C5800A6A196 /* Debug */,
+				70D2E33B24DA2C5800A6A196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		703C3CDA24F5AF270026038E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				703C3CDB24F5AF270026038E /* Model.xcdatamodel */,
+			);
+			currentVersion = 703C3CDB24F5AF270026038E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 70D2E31D24DA2C5500A6A196 /* Project object */;
+}

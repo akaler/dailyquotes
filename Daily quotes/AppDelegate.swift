@@ -23,14 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        /*
+        
         if (UserDefaults.standard.bool(forKey: "notFirstInApp") == false){
             UserDefaults.standard.set(true, forKey: "notFirstInApp")
             self.window?.rootViewController = UIViewController(nibName: "getstarted", bundle: nil)//your tutorial view controller
         }else{
             self.window?.rootViewController = UIViewController(nibName: "quotes", bundle: nil)//your main viewcontroller
         }
-*/
+
 
 
 //        if (UserDefaults.standard.bool( forKey: "saved")) == true {
