@@ -228,7 +228,8 @@ class quoteViewController: UIViewController {
     var stack = Stack()
     override func viewDidLoad() {
         super.viewDidLoad()
-        blackImage.alpha = 0.8
+        print("fetched alpha: \(UserDefaults.standard.double(forKey: "alpha"))")
+        blackImage.alpha = CGFloat(UserDefaults.standard.double(forKey: "alpha"))
         
         let user_selected_phil_dictionary = UserDefaults.standard.dictionary(forKey:"dict")!
         UserDefaults.standard.set(true, forKey: "saved")

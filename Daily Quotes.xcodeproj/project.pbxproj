@@ -33,6 +33,7 @@
 		707B05FB2509AAE900BCFD3C /* Rand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FA2509AAE900BCFD3C /* Rand.swift */; };
 		707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FC2509AB5B00BCFD3C /* Seneca.swift */; };
 		707B05FF2509ABA000BCFD3C /* Thoreau.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707B05FE2509ABA000BCFD3C /* Thoreau.swift */; };
+		70ADB940251D353A0090AE76 /* backgroundSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ADB93F251D353A0090AE76 /* backgroundSelectViewController.swift */; };
 		70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */; };
 		70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */; };
 		70D2E32924DA2C5500A6A196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D2E32824DA2C5500A6A196 /* AppDelegate.swift */; };
@@ -80,6 +81,7 @@
 		707B05FA2509AAE900BCFD3C /* Rand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rand.swift; sourceTree = "<group>"; };
 		707B05FC2509AB5B00BCFD3C /* Seneca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
 		707B05FE2509ABA000BCFD3C /* Thoreau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thoreau.swift; sourceTree = "<group>"; };
+		70ADB93F251D353A0090AE76 /* backgroundSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundSelectViewController.swift; sourceTree = "<group>"; };
 		70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationViewController.swift; sourceTree = "<group>"; };
 		70BD3B8C250C709E00E887A4 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 		70D2E32524DA2C5500A6A196 /* Daily Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +210,7 @@
 				70DD6C342500632D000923FA /* settingsViewController.swift */,
 				70BD3B8A250C5F8C00E887A4 /* notificationViewController.swift */,
 				707173692512F69600D36558 /* animationViewController.swift */,
+				70ADB93F251D353A0090AE76 /* backgroundSelectViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				70DC55C1251C315F00298266 /* likedViewController.swift in Sources */,
 				707B05F72509AA2100BCFD3C /* Aurelius.swift in Sources */,
 				70DD6C352500632D000923FA /* settingsViewController.swift in Sources */,
+				70ADB940251D353A0090AE76 /* backgroundSelectViewController.swift in Sources */,
 				70BD3B8D250C709E00E887A4 /* NotificationPublisher.swift in Sources */,
 				707B05FD2509AB5B00BCFD3C /* Seneca.swift in Sources */,
 				70BD3B8B250C5F8C00E887A4 /* notificationViewController.swift in Sources */,
@@ -522,13 +526,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
 				INFOPLIST_FILE = "Daily quotes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
 				PRODUCT_NAME = "Daily Quotes";
 				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";
@@ -545,13 +550,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H2QZX5ZBZ2;
 				INFOPLIST_FILE = "Daily quotes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kaler.Daily-quotes";
 				PRODUCT_NAME = "Daily Quotes";
 				SWIFT_OBJC_BRIDGING_HEADER = "Daily quotes/Daily quotes-Bridging-Header.h";

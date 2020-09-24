@@ -35,13 +35,19 @@ class selectViewController: UIViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cor = 0.8
+        
+        defaults.set(cor, forKey: "alpha")
         
        if (UserDefaults.standard.bool(forKey: "saved") == false)
        {
+        
         let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false, "jung": false, "schopenhauer": false]
+        
         defaults.set(25, forKey: "Age")
         defaults.set(dict, forKey: "dict")
         defaults.set(0, forKey: "Index")
+        
         let arr1_philosopher : [String] = []
         let arr2_index : [Int] = []
         
