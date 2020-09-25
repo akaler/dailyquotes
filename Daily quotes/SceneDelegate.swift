@@ -22,14 +22,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         //print(UserDefaults.standard.dictionary(forKey: "dict") ?? nil)
-       /*
+       
         if (UserDefaults.standard.bool(forKey: "saved") == true){
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             let newInitStoryBoard = mainStoryBoard.instantiateViewController(withIdentifier: "quotes")
             self.window?.rootViewController = newInitStoryBoard
             self.window?.makeKeyAndVisible()
         }
- */
+ 
         
     }
 

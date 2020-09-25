@@ -80,7 +80,7 @@ class likedViewController: UIViewController {
     var stack = Stack()
     override func viewDidLoad() {
         super.viewDidLoad()
-        blackImage.alpha = 0.8
+        blackImage.alpha = CGFloat(UserDefaults.standard.double(forKey: "alpha"))
         // Do any additional setup after loading the view.
         set_background_image()
         arr1_philosopher = UserDefaults.standard.stringArray(forKey: "arr1_phil") ?? [String]()
@@ -100,9 +100,36 @@ class likedViewController: UIViewController {
     }
     private func set_background_image()
     {
-        let random_num : Int = Int.random(in: 1 ... 45 )
-        let random_img : String = "a\(random_num)"
-        backgroundImage.image = UIImage(named: random_img)
+       if UserDefaults.standard.dictionary(forKey: "background_dict") != nil
+            {
+            let rr  = UserDefaults.standard.dictionary(forKey: "background_dict")!
+            var images_selected : [String] = []
+            for (img_name, ischoosen) in rr
+            {
+                if ischoosen as! Bool
+                {
+                    images_selected.append(img_name)
+                }
+            }
+            if (images_selected.count == 0)
+            {
+                let random_num : Int = Int.random(in: 0 ... 20)
+                let random_img: String = "s\(random_num)"
+                backgroundImage.image = UIImage(named: random_img)
+            }
+            else
+            {
+            let random_num : Int = Int.random(in: 0 ..< images_selected.count )
+            let random_img : String = images_selected[random_num]
+            backgroundImage.image = UIImage(named: random_img)
+            }
+        }
+        else
+        {
+            let random_num : Int = Int.random(in: 0 ... 20)
+            let random_img: String = "s\(random_num)"
+            backgroundImage.image = UIImage(named: random_img)
+        }
     }
     
     @IBAction func nextQuoteButtonPressed(_ sender: Any) {

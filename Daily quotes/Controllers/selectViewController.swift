@@ -35,12 +35,13 @@ class selectViewController: UIViewController {
     let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cor = 0.8
         
-        defaults.set(cor, forKey: "alpha")
         
        if (UserDefaults.standard.bool(forKey: "saved") == false)
        {
+        let cor = 0.6
+        
+        defaults.set(cor, forKey: "alpha")
         
         let dict : [String : Bool] = [ "suntzu": false, "heraclitus": false,"socrates": false, "plato": false, "aristotle" : false, "seneca": false, "epictetus": false, "aurelius": false, "descartes": false, "locke": false, "kant": false, "goethe": false, "emerson": false,"kierkegaard": false,"thoreau": false,"nietzsche": false, "frankl": false,"rand": false, "jung": false, "schopenhauer": false]
         
@@ -53,6 +54,12 @@ class selectViewController: UIViewController {
         
         defaults.set(arr1_philosopher, forKey: "arr1_phil")
         defaults.set(arr2_index, forKey: "arr2_index")
+        
+        let background_dict : [String: Bool] = [ "s1": false, "s2": false,"s3": false, "s4": false, "s5" : false, "s6": false, "s7": false, "s8": false, "s9": false, "s10": false, "s11": false, "s12": false, "s13": false,"s14": false,"s15": false,"s16": false, "s17": false,"s18": false, "s19": false, "s20": false]
+        
+        defaults.set(background_dict, forKey: "background_dict")
+        
+        
         
         }
         if (UserDefaults.standard.bool(forKey: "saved") == true)

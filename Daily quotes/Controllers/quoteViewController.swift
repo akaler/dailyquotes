@@ -250,9 +250,36 @@ class quoteViewController: UIViewController {
     
     private func set_background_image()
     {
-        let random_num : Int = Int.random(in: 1 ... 45 )
-        let random_img : String = "a\(random_num)"
-        backgroundImage.image = UIImage(named: random_img)
+        if UserDefaults.standard.dictionary(forKey: "background_dict") != nil
+            {
+            let rr  = UserDefaults.standard.dictionary(forKey: "background_dict")!
+            var images_selected : [String] = []
+            for (img_name, ischoosen) in rr
+            {
+                if ischoosen as! Bool
+                {
+                    images_selected.append(img_name)
+                }
+            }
+            if (images_selected.count == 0)
+            {
+                let random_num : Int = Int.random(in: 0 ... 20)
+                let random_img: String = "s\(random_num)"
+                backgroundImage.image = UIImage(named: random_img)
+            }
+            else
+            {
+            let random_num : Int = Int.random(in: 0 ..< images_selected.count )
+            let random_img : String = images_selected[random_num]
+            backgroundImage.image = UIImage(named: random_img)
+            }
+        }
+        else
+        {
+            let random_num : Int = Int.random(in: 0 ... 20)
+            let random_img: String = "s\(random_num)"
+            backgroundImage.image = UIImage(named: random_img)
+        }
 
     }
     
@@ -275,7 +302,7 @@ class quoteViewController: UIViewController {
         let arr2_index = UserDefaults.standard.array(forKey: "arr2_index") as? [Int] ?? [Int]()
         
         let len_of_array : Int = arr1_philosopher.count
-        let len_of_indexes: Int = arr2_index.count
+        //let len_of_indexes: Int = arr2_index.count
         if len_of_array == 0
         {
             return false
